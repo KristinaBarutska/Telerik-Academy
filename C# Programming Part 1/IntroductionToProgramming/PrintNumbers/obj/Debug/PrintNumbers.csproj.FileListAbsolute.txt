@@ -1,0 +1,9 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\bin\Debug\PrintNumbers.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\bin\Debug\PrintNumbers.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\bin\Debug\PrintNumbers.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\obj\Debug\PrintNumbers.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\obj\Debug\PrintNumbers.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\obj\Debug\PrintNumbers.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\Module 1\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\bin\Debug\PrintNumbers.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\Module 1\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\obj\Debug\PrintNumbers.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\Module 1\C# Programming Part 1\IntroductionToProgramming\PrintNumbers\obj\Debug\PrintNumbers.pdb

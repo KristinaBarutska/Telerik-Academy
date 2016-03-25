@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintYourName\bin\Debug\PrintYourName.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintYourName\bin\Debug\PrintYourName.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintYourName\bin\Debug\PrintYourName.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintYourName\obj\Debug\PrintYourName.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintYourName\obj\Debug\PrintYourName.pdb

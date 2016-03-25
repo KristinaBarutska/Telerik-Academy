@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintFirstAndLastName\bin\Debug\PrintFirstAndLastName.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintFirstAndLastName\bin\Debug\PrintFirstAndLastName.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintFirstAndLastName\bin\Debug\PrintFirstAndLastName.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintFirstAndLastName\obj\Debug\PrintFirstAndLastName.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\IntroductionToProgramming\PrintFirstAndLastName\obj\Debug\PrintFirstAndLastName.pdb
