@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\IsoscelesTriange\bin\Debug\IsoscelesTriange.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\IsoscelesTriange\bin\Debug\IsoscelesTriange.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\IsoscelesTriange\bin\Debug\IsoscelesTriange.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\IsoscelesTriange\obj\Debug\IsoscelesTriange.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\IsoscelesTriange\obj\Debug\IsoscelesTriange.pdb

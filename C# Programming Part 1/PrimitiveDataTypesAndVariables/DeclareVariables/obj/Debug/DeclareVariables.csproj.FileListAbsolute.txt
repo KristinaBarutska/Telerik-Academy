@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\DeclareVariables\bin\Debug\DeclareVariables.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\DeclareVariables\bin\Debug\DeclareVariables.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\DeclareVariables\bin\Debug\DeclareVariables.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\DeclareVariables\obj\Debug\DeclareVariables.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\DeclareVariables\obj\Debug\DeclareVariables.pdb

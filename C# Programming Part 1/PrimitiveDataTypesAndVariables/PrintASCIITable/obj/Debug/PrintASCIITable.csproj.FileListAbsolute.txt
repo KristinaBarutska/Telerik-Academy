@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\PrintASCIITable\bin\Debug\PrintASCIITable.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\PrintASCIITable\bin\Debug\PrintASCIITable.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\PrintASCIITable\bin\Debug\PrintASCIITable.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\PrintASCIITable\obj\Debug\PrintASCIITable.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\PrintASCIITable\obj\Debug\PrintASCIITable.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\PrimitiveDataTypesAndVariables\PrintASCIITable\obj\Debug\PrintASCIITable.pdb
