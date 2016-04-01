@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\FibonacciNumbers\bin\Debug\FibonacciNumbers.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\FibonacciNumbers\bin\Debug\FibonacciNumbers.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\FibonacciNumbers\bin\Debug\FibonacciNumbers.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\FibonacciNumbers\obj\Debug\FibonacciNumbers.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\FibonacciNumbers\obj\Debug\FibonacciNumbers.pdb

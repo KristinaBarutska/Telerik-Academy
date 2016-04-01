@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumbersInInterval\bin\Debug\NumbersInInterval.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumbersInInterval\bin\Debug\NumbersInInterval.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumbersInInterval\bin\Debug\NumbersInInterval.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumbersInInterval\obj\Debug\NumbersInInterval.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumbersInInterval\obj\Debug\NumbersInInterval.pdb

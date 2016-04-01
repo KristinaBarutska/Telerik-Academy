@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ExtractBitFromInteger\bin\Debug\ExtractBitFromInteger.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ExtractBitFromInteger\bin\Debug\ExtractBitFromInteger.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ExtractBitFromInteger\bin\Debug\ExtractBitFromInteger.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ExtractBitFromInteger\obj\Debug\ExtractBitFromInteger.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ExtractBitFromInteger\obj\Debug\ExtractBitFromInteger.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ExtractBitFromInteger\obj\Debug\ExtractBitFromInteger.csprojResolveAssemblyReference.cache

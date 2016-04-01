@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersFromOneToN\bin\Debug\NumbersFromOneToN.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersFromOneToN\bin\Debug\NumbersFromOneToN.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersFromOneToN\bin\Debug\NumbersFromOneToN.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersFromOneToN\obj\Debug\NumbersFromOneToN.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersFromOneToN\obj\Debug\NumbersFromOneToN.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersFromOneToN\obj\Debug\NumbersFromOneToN.pdb

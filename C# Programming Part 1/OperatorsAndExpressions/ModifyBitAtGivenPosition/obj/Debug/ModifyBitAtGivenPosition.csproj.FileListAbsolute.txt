@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ModifyBitAtGivenPosition\bin\Debug\ModifyBitAtGivenPosition.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ModifyBitAtGivenPosition\bin\Debug\ModifyBitAtGivenPosition.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ModifyBitAtGivenPosition\bin\Debug\ModifyBitAtGivenPosition.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ModifyBitAtGivenPosition\obj\Debug\ModifyBitAtGivenPosition.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ModifyBitAtGivenPosition\obj\Debug\ModifyBitAtGivenPosition.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\ModifyBitAtGivenPosition\obj\Debug\ModifyBitAtGivenPosition.csprojResolveAssemblyReference.cache

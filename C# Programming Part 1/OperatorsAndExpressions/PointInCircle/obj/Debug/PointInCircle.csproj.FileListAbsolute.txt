@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PointInCircle\bin\Debug\PointInCircle.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PointInCircle\bin\Debug\PointInCircle.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PointInCircle\bin\Debug\PointInCircle.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PointInCircle\obj\Debug\PointInCircle.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PointInCircle\obj\Debug\PointInCircle.pdb

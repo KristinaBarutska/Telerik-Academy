@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\GravitationOnTheMoon\bin\Debug\GravitationOnTheMoon.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\GravitationOnTheMoon\bin\Debug\GravitationOnTheMoon.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\GravitationOnTheMoon\bin\Debug\GravitationOnTheMoon.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\GravitationOnTheMoon\obj\Debug\GravitationOnTheMoon.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\GravitationOnTheMoon\obj\Debug\GravitationOnTheMoon.pdb

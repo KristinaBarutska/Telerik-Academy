@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\Trapezoids\bin\Debug\Trapezoids.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\Trapezoids\bin\Debug\Trapezoids.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\Trapezoids\bin\Debug\Trapezoids.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\Trapezoids\obj\Debug\Trapezoids.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\Trapezoids\obj\Debug\Trapezoids.pdb

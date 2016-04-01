@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\BeerTime\bin\Debug\BeerTime.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\BeerTime\bin\Debug\BeerTime.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\BeerTime\bin\Debug\BeerTime.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\BeerTime\obj\Debug\BeerTime.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\BeerTime\obj\Debug\BeerTime.pdb

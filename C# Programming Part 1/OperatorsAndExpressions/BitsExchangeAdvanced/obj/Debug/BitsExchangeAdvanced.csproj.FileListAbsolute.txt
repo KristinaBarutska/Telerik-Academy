@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\BitsExchangeAdvanced\bin\Debug\BitsExchangeAdvanced.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\BitsExchangeAdvanced\bin\Debug\BitsExchangeAdvanced.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\BitsExchangeAdvanced\bin\Debug\BitsExchangeAdvanced.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\BitsExchangeAdvanced\obj\Debug\BitsExchangeAdvanced.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\BitsExchangeAdvanced\obj\Debug\BitsExchangeAdvanced.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\BitsExchangeAdvanced\obj\Debug\BitsExchangeAdvanced.csprojResolveAssemblyReference.cache

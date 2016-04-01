@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\CheckBitAtGivenPosition\bin\Debug\CheckBitAtGivenPosition.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\CheckBitAtGivenPosition\bin\Debug\CheckBitAtGivenPosition.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\CheckBitAtGivenPosition\bin\Debug\CheckBitAtGivenPosition.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\CheckBitAtGivenPosition\obj\Debug\CheckBitAtGivenPosition.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\CheckBitAtGivenPosition\obj\Debug\CheckBitAtGivenPosition.pdb

@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PrimeNumberCheck\bin\Debug\PrimeNumberCheck.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PrimeNumberCheck\bin\Debug\PrimeNumberCheck.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PrimeNumberCheck\bin\Debug\PrimeNumberCheck.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PrimeNumberCheck\obj\Debug\PrimeNumberCheck.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\OperatorsAndExpressions\PrimeNumberCheck\obj\Debug\PrimeNumberCheck.pdb

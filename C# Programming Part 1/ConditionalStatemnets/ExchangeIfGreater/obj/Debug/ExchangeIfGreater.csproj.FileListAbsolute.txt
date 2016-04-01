@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ExchangeIfGreater\bin\Debug\ExchangeIfGreater.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ExchangeIfGreater\bin\Debug\ExchangeIfGreater.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ExchangeIfGreater\bin\Debug\ExchangeIfGreater.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ExchangeIfGreater\obj\Debug\ExchangeIfGreater.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ExchangeIfGreater\obj\Debug\ExchangeIfGreater.pdb

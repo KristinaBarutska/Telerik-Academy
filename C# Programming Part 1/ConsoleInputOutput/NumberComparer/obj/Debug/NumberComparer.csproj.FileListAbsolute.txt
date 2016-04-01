@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumberComparer\bin\Debug\NumberComparer.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumberComparer\bin\Debug\NumberComparer.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumberComparer\bin\Debug\NumberComparer.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumberComparer\obj\Debug\NumberComparer.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConsoleInputOutput\NumberComparer\obj\Debug\NumberComparer.pdb

@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersNotDivisibleBySevenAndThree\bin\Debug\NumbersNotDivisibleBySevenAndThree.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersNotDivisibleBySevenAndThree\bin\Debug\NumbersNotDivisibleBySevenAndThree.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersNotDivisibleBySevenAndThree\bin\Debug\NumbersNotDivisibleBySevenAndThree.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersNotDivisibleBySevenAndThree\obj\Debug\NumbersNotDivisibleBySevenAndThree.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\NumbersNotDivisibleBySevenAndThree\obj\Debug\NumbersNotDivisibleBySevenAndThree.pdb

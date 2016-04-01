@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\MinMaxSumAndAverage\bin\Debug\MinMaxSumAndAverage.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\MinMaxSumAndAverage\bin\Debug\MinMaxSumAndAverage.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\MinMaxSumAndAverage\bin\Debug\MinMaxSumAndAverage.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\MinMaxSumAndAverage\obj\Debug\MinMaxSumAndAverage.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\Loops\MinMaxSumAndAverage\obj\Debug\MinMaxSumAndAverage.pdb
