@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+}
+
+input {
+  text-align: right;
+  border: none;
+  font-size: 25px;
+  color: rgb(115, 210, 227);
+}
+
+td {
+  height: 60px;
+  border: 1px solid rgb(115, 210, 227);
+}
+
+button {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(115, 210, 227);
+  border: none;
+  height: 60px;
+  width: 77px;
+  background-color: white;
+}
+
+#zero-button {
+  margin-left: 40px;
+}

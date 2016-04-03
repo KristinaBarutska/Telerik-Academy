@@ -1,0 +1,17 @@
+div {
+  margin: 5px;
+}
+
+span {
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+#submit-button {
+  background: url("http://www.clker.com/cliparts/9/3/e/f/14144256491614649893green_submit_button_by_rukiaxichigo152.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 70px;
+  height: 30px;
+  border: none;
+  margin: 2px;
+}
