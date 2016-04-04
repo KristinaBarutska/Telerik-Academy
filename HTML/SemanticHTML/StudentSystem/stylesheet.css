@@ -1,0 +1,25 @@
+body {
+  font-size: 20px;
+}
+
+h1, p {
+  display: inline-block;
+}
+
+p {
+  margin-left: 100px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead td {
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}

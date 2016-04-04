@@ -1,0 +1,25 @@
+#logo {
+  font-size: 20px;
+}
+
+#btn-join {
+  margin-bottom: 15px;
+}
+
+span {
+  display: block;
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+}
+
+#sign-in {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#search-heading {
+  font-weight: bold;
+}
