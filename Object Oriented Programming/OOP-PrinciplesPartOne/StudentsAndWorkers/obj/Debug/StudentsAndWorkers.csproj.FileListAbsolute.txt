@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.pdb

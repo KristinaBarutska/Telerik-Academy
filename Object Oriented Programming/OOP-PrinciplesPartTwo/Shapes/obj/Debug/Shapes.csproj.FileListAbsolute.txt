@@ -1,0 +1,9 @@
+C:\Users\g-belchev\Documents\Coding\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartTwo\Shapes\bin\Debug\Shapes.exe.config
+C:\Users\g-belchev\Documents\Coding\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartTwo\Shapes\bin\Debug\Shapes.exe
+C:\Users\g-belchev\Documents\Coding\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartTwo\Shapes\bin\Debug\Shapes.pdb
+C:\Users\g-belchev\Documents\Coding\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartTwo\Shapes\obj\Debug\Shapes.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Documents\Coding\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartTwo\Shapes\obj\Debug\Shapes.exe
+C:\Users\g-belchev\Documents\Coding\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartTwo\Shapes\obj\Debug\Shapes.pdb
+C:\Users\belchev\Desktop\HomeWorks\Module 1\Object Oriented Programming\OOP-PrinciplesPartTwo\Shapes\bin\Debug\Shapes.exe.config
+C:\Users\belchev\Desktop\HomeWorks\Module 1\Object Oriented Programming\OOP-PrinciplesPartTwo\Shapes\obj\Debug\Shapes.exe
+C:\Users\belchev\Desktop\HomeWorks\Module 1\Object Oriented Programming\OOP-PrinciplesPartTwo\Shapes\obj\Debug\Shapes.pdb

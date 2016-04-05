@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\Point\bin\Debug\Point.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\Point\bin\Debug\Point.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\Point\bin\Debug\Point.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\Point\obj\Debug\Point.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\Point\obj\Debug\Point.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\Point\obj\Debug\Point.pdb

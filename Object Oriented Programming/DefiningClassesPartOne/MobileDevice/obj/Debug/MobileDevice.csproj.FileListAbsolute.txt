@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartOne\MobileDevice\bin\Debug\MobileDevice.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartOne\MobileDevice\bin\Debug\MobileDevice.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartOne\MobileDevice\bin\Debug\MobileDevice.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartOne\MobileDevice\obj\Debug\MobileDevice.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartOne\MobileDevice\obj\Debug\MobileDevice.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartOne\MobileDevice\obj\Debug\MobileDevice.pdb
