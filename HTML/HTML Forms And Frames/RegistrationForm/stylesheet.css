@@ -1,0 +1,42 @@
+td {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+textarea {
+  width: 97.5%;
+}
+
+input {
+  width: 98%;
+}
+
+#city-input-field {
+  width: 65%;
+}
+
+.smaller-input-field {
+  width: 10%;
+}
+
+select {
+  width:99%;
+}
+
+#phone-input {
+  width: 69%;
+}
+
+#autumn, #summer {
+  width:2%;
+}
+
+button {
+  width: 35%;
+  height: 30px;
+  margin-left: 10%;
+}
+
+.key, #state {
+  font-weight: bold;
+}

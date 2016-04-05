@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="key">Last name</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td class="key">First name</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td class="key">Adress</td>
+      <td><textarea name="name" rows="4" cols="30"></textarea></td>
+    </tr>
+    <tr>
+      <td class="key">City</td>
+      <td>
+        <input type="text" id="city-input-field">
+        <span id="state">State</span>
+        <input type="text" class="smaller-input-field">
+      </td>
+    </tr>
+    <tr>
+      <td class="key">Zip/Postal Code</td>
+      <td><input type="text" class="smaller-input-field"></td>
+    </tr>
+    <tr>
+      <td class="key">Country</td>
+      <td>
+        <select>
+          <option>Bulgaria</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="key">Phone</td>
+      <td>
+        +(
+        <input type="text" class="smaller-input-field">
+        )
+        <input type="text" class="smaller-input-field">
+        -
+        <input type="text" id="phone-input">
+      </td>
+    </tr>
+    <tr>
+      <td class="key">Birth Date</td>
+      <td><input type="text" placeholder="дд.мм.гггг г."></td>
+    </tr>
+    <tr>
+      <td class="key">Gender</td>
+      <td>
+        <select>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="key">Starting Date</td>
+      <td>
+        <input type="radio" id="summer">
+        <label for="summer">Summer</label>
+        <input type="radio" id="autumn">
+        <label for="autumn">Autumn</label>
+      </td>
+    </tr>
+    <tr>
+      <td class="key">Comments/Questions</td>
+      <td><textarea name="name" rows="4" cols="30"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button>Submit</button>
+        <button>Clear</button>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
