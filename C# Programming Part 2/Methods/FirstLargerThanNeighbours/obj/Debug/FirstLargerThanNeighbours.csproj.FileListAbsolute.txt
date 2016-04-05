@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\FirstLargerThanNeighbours\bin\Debug\FirstLargerThanNeighbours.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\FirstLargerThanNeighbours\bin\Debug\FirstLargerThanNeighbours.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\FirstLargerThanNeighbours\bin\Debug\FirstLargerThanNeighbours.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\FirstLargerThanNeighbours\obj\Debug\FirstLargerThanNeighbours.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\FirstLargerThanNeighbours\obj\Debug\FirstLargerThanNeighbours.pdb

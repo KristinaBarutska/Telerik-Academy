@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\LargerThanNeighbours\bin\Debug\LargerThanNeighbours.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\LargerThanNeighbours\bin\Debug\LargerThanNeighbours.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\LargerThanNeighbours\bin\Debug\LargerThanNeighbours.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\LargerThanNeighbours\obj\Debug\LargerThanNeighbours.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\LargerThanNeighbours\obj\Debug\LargerThanNeighbours.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\LargerThanNeighbours\obj\Debug\LargerThanNeighbours.pdb

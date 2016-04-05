@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\AppearanceCount\bin\Debug\AppearanceCount.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\AppearanceCount\bin\Debug\AppearanceCount.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\AppearanceCount\bin\Debug\AppearanceCount.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\AppearanceCount\obj\Debug\AppearanceCount.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\AppearanceCount\obj\Debug\AppearanceCount.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\AppearanceCount\obj\Debug\AppearanceCount.pdb

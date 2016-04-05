@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ForbiddenWords\bin\Debug\ForbiddenWords.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ForbiddenWords\bin\Debug\ForbiddenWords.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ForbiddenWords\bin\Debug\ForbiddenWords.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ForbiddenWords\obj\Debug\ForbiddenWords.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ForbiddenWords\obj\Debug\ForbiddenWords.pdb

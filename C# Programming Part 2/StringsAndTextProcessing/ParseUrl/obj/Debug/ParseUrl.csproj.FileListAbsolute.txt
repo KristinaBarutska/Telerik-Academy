@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseUrl\bin\Debug\ParseUrl.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseUrl\bin\Debug\ParseUrl.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseUrl\bin\Debug\ParseUrl.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseUrl\obj\Debug\ParseUrl.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseUrl\obj\Debug\ParseUrl.pdb

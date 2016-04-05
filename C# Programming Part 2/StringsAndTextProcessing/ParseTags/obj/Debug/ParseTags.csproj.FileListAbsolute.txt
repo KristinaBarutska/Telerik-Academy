@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseTags\bin\Debug\ParseTags.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseTags\bin\Debug\ParseTags.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseTags\bin\Debug\ParseTags.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseTags\obj\Debug\ParseTags.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\ParseTags\obj\Debug\ParseTags.pdb

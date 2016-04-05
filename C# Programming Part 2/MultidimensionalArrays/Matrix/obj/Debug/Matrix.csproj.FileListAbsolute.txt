@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\Matrix\bin\Debug\Matrix.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\Matrix\bin\Debug\Matrix.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\Matrix\bin\Debug\Matrix.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\Matrix\obj\Debug\Matrix.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\Matrix\obj\Debug\Matrix.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\Matrix\obj\Debug\Matrix.pdb

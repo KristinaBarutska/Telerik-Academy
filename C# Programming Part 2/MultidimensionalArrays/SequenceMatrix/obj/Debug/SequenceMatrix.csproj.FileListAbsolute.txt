@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\SequenceMatrix\bin\Debug\SequenceMatrix.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\SequenceMatrix\bin\Debug\SequenceMatrix.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\SequenceMatrix\bin\Debug\SequenceMatrix.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\SequenceMatrix\obj\Debug\SequenceMatrix.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\SequenceMatrix\obj\Debug\SequenceMatrix.pdb

@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\EnglishDigit\bin\Debug\EnglishDigit.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\EnglishDigit\bin\Debug\EnglishDigit.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\EnglishDigit\bin\Debug\EnglishDigit.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\EnglishDigit\obj\Debug\EnglishDigit.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\EnglishDigit\obj\Debug\EnglishDigit.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\EnglishDigit\obj\Debug\EnglishDigit.pdb

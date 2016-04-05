@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\EncodeDecode\bin\Debug\EncodeDecode.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\EncodeDecode\bin\Debug\EncodeDecode.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\EncodeDecode\bin\Debug\EncodeDecode.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\EncodeDecode\obj\Debug\EncodeDecode.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\EncodeDecode\obj\Debug\EncodeDecode.pdb

@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\StringLength\bin\Debug\StringLength.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\StringLength\bin\Debug\StringLength.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\StringLength\bin\Debug\StringLength.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\StringLength\obj\Debug\StringLength.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\StringsAndTextProcessing\StringLength\obj\Debug\StringLength.pdb

@@ -1,0 +1,6 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\GetLargestNumber\bin\Debug\GetLargestNumber.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\GetLargestNumber\bin\Debug\GetLargestNumber.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\GetLargestNumber\bin\Debug\GetLargestNumber.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\GetLargestNumber\obj\Debug\GetLargestNumber.csprojResolveAssemblyReference.cache
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\GetLargestNumber\obj\Debug\GetLargestNumber.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\JavaScript Fundamentals\Methods\GetLargestNumber\obj\Debug\GetLargestNumber.pdb

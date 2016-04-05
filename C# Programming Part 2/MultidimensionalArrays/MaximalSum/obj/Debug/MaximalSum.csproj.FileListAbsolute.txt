@@ -1,0 +1,5 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\MaximalSum\bin\Debug\MaximalSum.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\MaximalSum\bin\Debug\MaximalSum.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\MaximalSum\bin\Debug\MaximalSum.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\MaximalSum\obj\Debug\MaximalSum.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\MaximalSum\obj\Debug\MaximalSum.pdb

@@ -1,0 +1,7 @@
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\PrintMatrixVariantC\bin\Debug\PrintMatrixVariantC.exe.config
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\PrintMatrixVariantC\bin\Debug\PrintMatrixVariantC.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\PrintMatrixVariantC\bin\Debug\PrintMatrixVariantC.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\PrintMatrixVariantC\bin\Debug\Matrix.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\PrintMatrixVariantC\bin\Debug\Matrix.pdb
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\PrintMatrixVariantC\obj\Debug\PrintMatrixVariantC.exe
+C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 2\MultidimensionalArrays\PrintMatrixVariantC\obj\Debug\PrintMatrixVariantC.pdb
