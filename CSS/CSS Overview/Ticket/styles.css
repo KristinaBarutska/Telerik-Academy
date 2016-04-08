@@ -1,0 +1,44 @@
+body {
+  color: lightgray;
+}
+table {
+  background-color: #595959;
+}
+td {
+  margin: 5px;
+  padding: 5px;
+}
+img {
+  height: 10px;
+  width: 10px;
+  float: left;
+  margin-top: 10px;
+}
+#support-info {
+  display: block;
+  float: left;
+  color: red;
+}
+.name {
+  display: block;
+  clear: right;
+  float: left;
+  margin-left: 5px;
+}
+.atrribute-key {
+  font-style: italic;
+  color: white;
+  vertical-align: top;
+}
+.user-info {
+  color: #D1E3A0;
+}
+#lock-info {
+  display: block;
+}
+span {
+  margin: 5px;
+}
+#status-info {
+  color: orange;
+}
