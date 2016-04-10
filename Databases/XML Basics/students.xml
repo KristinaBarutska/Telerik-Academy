@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<students>
+  <student xmlns:students="urn:schemas-microsoft-com:rowset">
+    <name>Antonio</name>
+    <sex>Male</sex>
+    <birth-date>11.10.1432</birth-date>
+    <phone>+359 123 456 123</phone>
+    <email>antonio@fbi.com</email>
+    <course>Mathematics</course>
+    <speciality>Mathematics</speciality>
+    <faculty-number>321083721</faculty-number>
+    <taken-exams>
+      <exam>
+        <name>Physics</name>
+        <tutor>Rovert</tutor>
+        <score>A</score>
+      </exam>
+      <exam>
+        <name>Discrete Mathematics</name>
+        <tutor>Anjella</tutor>
+        <score>A</score>
+      </exam>
+    </taken-exams>
+  </student>
+</students>
