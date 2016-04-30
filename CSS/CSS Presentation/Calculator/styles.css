@@ -1,0 +1,167 @@
+body, div, header, h1, button, img, table, tr, td {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  margin: 10px;
+  height: 390px;
+  width: 424px;
+  background-color: #69C1F1;
+}
+
+button {
+  border: 0;
+  background: none;
+}
+
+header > img {
+  width: 12px;
+  height: 16px;
+  margin: 6px 4px 0 12px;
+}
+
+header > h1 {
+  display: inline;
+  text-align: left;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+#minimizeButton {
+  background-image: url('minOff.png');
+  width: 28px;
+  height: 22px;
+  margin-left: 70px;
+}
+
+#minimizeButton:hover {
+  background-image: url('minOn.png');
+}
+
+#maximizeButton {
+  background-image: url('max.png');
+  width: 26px;
+  height: 22px;
+  margin-left: -4px;
+}
+
+#closeButton {
+  background-image: url('closeOff.png');
+  width: 44px;
+  height: 22px;
+  margin-left: -4px;
+}
+
+#closeButton:hover {
+  background-image: url('closeOn.png');
+}
+
+#InnerWrap {
+  background-color: #D9E4F1;
+  width: 408px;
+  height: 333px;
+  margin: 0 8px 6px 8px;
+}
+
+nav {
+  margin: 4px 8px 0 8px;
+  background: #F5F6F7;
+  height: 16px;
+}
+
+nav button {
+  padding: 0 5px 0 5px;
+  font-size: 12px;
+}
+
+nav button::first-letter {
+  text-decoration: underline;
+}
+
+nav button:hover {
+  background-color: #D5E7F8;
+}
+
+#screen {
+  width: 376px;
+  height: 44px;
+  margin: 14px 12px 8px 12px;
+  border-radius: 2px;
+  border: 1px #8E9CAD solid;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 4px;
+  background: #e5eefb;
+}
+
+#binary {
+  width: 382px;
+  height: 22px;
+  margin: 0 12px 8px 12px;
+  border: 1px #8E9CAD solid;
+  border-radius: 2px;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+#binary tr td {
+  text-align: center;
+  width: auto;
+}
+
+#binary tr:nth-child(2n+1) {
+  color: #1E3976;
+}
+
+#binary tr:nth-child(2n) {
+  color: #666666;
+}
+
+#allbuttons {
+  margin: 0px 10px 2px 10px;
+  height: 190px;
+  width: 386px;
+  text-align: center;
+  vertical-align: central;
+  border-spacing: 4px;
+}
+
+#allbuttons td {
+  width: 20px;
+  height: 20px;
+  border: 1px #8E9CAD solid;
+  border-radius: 2px;
+}
+
+#allbuttons .normal {
+  background: #f0f6fb;
+}
+
+allbuttons .disabled {
+  color: lightgray;
+}
+
+#allbuttons .number {
+  background: #f7fbff;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f7fbff', endColorstr='#eef6fb', GradientType=0);
+}
+
+#allbuttons td:not(.disabled):hover {
+  background: #fff4e9;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fff4e9', endColorstr='#ffe67c', GradientType=0);
+}
+
+.radiobuttons {
+  text-align: left;
+  font-size: 12px;
+  width: 100px;
+}
+
+#allbuttons #hex:hover {
+  background: #D9E4F1;
+}
+
+#allbuttons #word:hover {
+  background: #D9E4F1;
+}
