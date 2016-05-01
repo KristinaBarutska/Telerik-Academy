@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Calculator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div id="wrapper">
     <header>
-      <img src="images/calculator-icon.png" alt="calculator icon" id="calculator-icon" />
+      <img src="images/calculator-icon.png" alt="calculator-icon" id="calculator-icon" />
       <h1>Calculator</h1>
-      <button id="minimizeButton" title="Minimize"></button>
-      <button id="maximizeButton"></button>
-      <button id="closeButton" title="Close"></button>
+      <div id="icons">
+        <button id="minimizeButton" title="Minimize"></button>
+        <button id="maximizeButton"></button>
+        <button id="closeButton" title="Close"></button>
+      </div>
     </header>
 
     <nav>
@@ -72,13 +76,26 @@
         <tbody>
           <tr>
             <td rowspan="3" class="radiobuttons" id="hex">
-              <input type="radio" name="hex">Hex
-              <br />
-              <input type="radio" name="hex" checked="checked">Dec
-              <br />
-              <input type="radio" name="hex">Oct
-              <br />
-              <input type="radio" name="hex">Bin
+              <table class="words-table">
+                <tr>
+                  <td>
+                    <input type="radio" name="hex">
+                  </td>
+                  <td>Hex</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" name="hex" checked="checked"></td>
+                  <td>Dec</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" name="hex"></td>
+                  <td>Oct</td>
+                </tr>
+                <tr>
+                  <td><input type="radio" name="hex"></td>
+                  <td>Bin</td>
+                </tr>
+              </table>
             </td>
 
             <td class="disabled">
@@ -160,13 +177,32 @@
           </tr>
           <tr>
             <td rowspan="3" class="radiobuttons" id="word">
-              <input type="radio" name="word" checked="checked">Qword
-              <br />
-              <input type="radio" name="word">Dword
-              <br />
-              <input type="radio" name="word">Word
-              <br />
-              <input type="radio" name="word">Byte
+              <table class="words-table">
+                <tr>
+                  <td>
+                    <input type="radio" name="word" checked="checked">
+                  </td>
+                  <td>Qword</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="word">
+                  </td>
+                  <td>Dword</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="word">
+                  </td>
+                  <td>Word</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="word">
+                  </td>
+                  <td>Byte</td>
+                </tr>
+              </table>
             </td>
             <td class="normal">
               <button>Or</button>
@@ -244,4 +280,5 @@
     </div>
   </div>
 </body>
+
 </html>

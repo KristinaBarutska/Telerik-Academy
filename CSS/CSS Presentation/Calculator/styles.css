@@ -28,33 +28,29 @@ header > h1 {
   font-size: 14px;
 }
 
+#icons {
+  float: right;
+}
+
 #minimizeButton {
-  background-image: url('minOff.png');
+  background-image: url('images/minimise-icon.png');
   width: 28px;
   height: 22px;
   margin-left: 70px;
 }
 
-#minimizeButton:hover {
-  background-image: url('minOn.png');
-}
-
 #maximizeButton {
-  background-image: url('max.png');
+  background-image: url('images/maximise-icon.png');
   width: 26px;
   height: 22px;
   margin-left: -4px;
 }
 
 #closeButton {
-  background-image: url('closeOff.png');
+  background-image: url('images/close-icon.png');
   width: 44px;
   height: 22px;
   margin-left: -4px;
-}
-
-#closeButton:hover {
-  background-image: url('closeOn.png');
 }
 
 #InnerWrap {
@@ -164,4 +160,8 @@ allbuttons .disabled {
 
 #allbuttons #word:hover {
   background: #D9E4F1;
+}
+
+.words-table td {
+  border: none !important;
 }
