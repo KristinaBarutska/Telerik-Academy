@@ -1,0 +1,55 @@
+body {
+  background-color: #EEEEEE;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0 0 30px 20px;
+}
+
+article {
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+  width: 400px;
+  overflow: auto;
+  margin: 20px;
+  padding: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+p {
+  width: 200px;
+  font-size: 14px;
+}
+
+img {
+  width: 160px;
+  height: 110px;
+  float: left;
+  margin: 10px;
+}
+
+section {
+  float: left;
+}
+
+button {
+  background-image: url("images/button-background.png");
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat; 
+  text-align: right;
+  border: none;
+  width: 70px;
+  height: 22px;
+  color: #EEEEEE;
+}
+
+.buttons-container {
+  float: right;
+}

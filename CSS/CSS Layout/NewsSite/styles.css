@@ -1,0 +1,75 @@
+#main-window {
+  background-color: #1E3741;
+  border-radius: 8px;
+  width: 650px;
+  margin: 0 auto;
+}
+
+#main-window header ul {
+  list-style-type: none;
+  padding: 2px;
+  margin-left: 2px;
+}
+
+#main-window header ul li {
+  display: inline;
+}
+
+#main-window header ul li #news-button {
+  background-color: #1E3741;
+  color: #E0FDE2;
+}
+
+#main-window header ul li #sports-button {
+  text-decoration: underline;
+}
+
+#main-window header ul button {
+  padding: 7px 10px 10px 10px;
+  margin: 4px 0 4px 0;
+  border: 0;
+  background-color: #4B5F67;
+  color: #93A49C;
+  height: 30px;
+  vertical-align: top;
+}
+
+#internet-news {
+  background-color: #00968C;
+}
+
+#internet-news a {
+  color: #E0FDE2;
+}
+
+main {
+  overflow: auto;
+}
+
+main article {
+  width: 260px;
+  float: left;
+  clear: both;
+}
+
+main article section {
+  border-bottom: 1px solid #73A7B7;
+  padding: 5px;
+}
+
+main article section a {
+  text-decoration: none;
+  color: #73A7B7;
+}
+
+aside {
+  float: left;
+}
+
+aside {
+  width: 300px;
+  height: 300px;
+  float: left;
+  clear: right;
+  margin-left: 10px;
+}
