@@ -1,5 +1,0 @@
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\GenericList\bin\Debug\GenericList.exe.config
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\GenericList\bin\Debug\GenericList.exe
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\GenericList\bin\Debug\GenericList.pdb
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\GenericList\obj\Debug\GenericList.exe
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\DefiningClassesPartTwo\GenericList\obj\Debug\GenericList.pdb

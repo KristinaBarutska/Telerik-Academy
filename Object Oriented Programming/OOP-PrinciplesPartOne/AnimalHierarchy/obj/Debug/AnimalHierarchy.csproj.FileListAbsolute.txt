@@ -1,5 +1,0 @@
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\AnimalHierarchy\bin\Debug\AnimalHierarchy.exe.config
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\AnimalHierarchy\bin\Debug\AnimalHierarchy.exe
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\AnimalHierarchy\bin\Debug\AnimalHierarchy.pdb
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\AnimalHierarchy\obj\Debug\AnimalHierarchy.exe
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\OOP\OOP-PrinciplesPartOne\AnimalHierarchy\obj\Debug\AnimalHierarchy.pdb
