@@ -1,0 +1,6 @@
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\9GagNumbers\bin\Debug\9GagNumbers.exe.config
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\9GagNumbers\bin\Debug\9GagNumbers.exe
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\9GagNumbers\bin\Debug\9GagNumbers.pdb
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\9GagNumbers\obj\Debug\9GagNumbers.exe
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\9GagNumbers\obj\Debug\9GagNumbers.pdb
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\9GagNumbers\obj\Debug\9GagNumbers.csprojResolveAssemblyReference.cache

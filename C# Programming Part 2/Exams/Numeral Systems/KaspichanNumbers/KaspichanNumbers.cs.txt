@@ -1,0 +1,100 @@
+﻿namespace KaspichanNumbers
+{
+    using System;
+    using System.Numerics;
+    using System.Text;
+
+    class KaspichanNumbers
+    {
+        public static void Main()
+        {
+            string[] numeralSystem = new string[256];
+            string[] capitals = new string[26];
+            string[] lowers = new string[26];
+            int numeralSystemMixLettersStart = capitals.Length;
+
+            FillCapitals(ref capitals);
+            FillLowers(ref lowers);
+            FillCapitalsOnly(ref numeralSystem, capitals);
+            FillFullNumeralSystem(ref numeralSystem, lowers, capitals, numeralSystemMixLettersStart);
+
+            BigInteger input = BigInteger.Parse(Console.ReadLine());
+            string result = string.Empty;
+
+            if (input < 256)
+            {
+                result = numeralSystem[(int)input];
+            }
+            else
+            {
+                result = CalculateResult(input, numeralSystem);
+            }
+
+            Console.WriteLine(result);
+        }
+
+        private static void FillLowers(ref string[] lowers)
+        {
+            int index = 0;
+
+            for (char i = 'a'; i < 'z'; i++, index++)
+            {
+                lowers[index] = i.ToString();
+            }
+        }
+
+        private static void FillCapitals(ref string[] capitals)
+        {
+            int index = 0;
+
+            for (char i = 'A'; i <= 'Z'; i++, index++)
+            {
+                capitals[index] = i.ToString();
+            }
+        }
+
+        private static void FillCapitalsOnly(ref string[] numeralSystem, string[] capitals)
+        {
+            for (int i = 0; i < capitals.Length; i++)
+            {
+                numeralSystem[i] = capitals[i];
+            }
+        }
+
+        private static void FillFullNumeralSystem(ref string[] numeralSystem, string[] lowers,
+            string[] capitals, int numeralSystemMixLettersStart)
+        {
+            int index = numeralSystemMixLettersStart;
+
+            while (index < 256)
+            {
+                for (int i = 0; i < lowers.Length; i++)
+                {
+                    for (int j = 0; j < capitals.Length; j++, index++)
+                    {
+                        if (index == 256)
+                        {
+                            break;
+                        }
+
+                        numeralSystem[index] = lowers[i] + capitals[j];
+                    }
+                }
+            }
+        }
+
+        private static string CalculateResult(BigInteger number, string[] numeralSystem)
+        {
+            var result = new StringBuilder();
+
+            while (number > 0)
+            {
+                BigInteger currentElement = number % 256;
+                result.Insert(0, numeralSystem[(int)currentElement]);
+                number /= 256;
+            }
+
+            return result.ToString();
+        }
+    }
+}

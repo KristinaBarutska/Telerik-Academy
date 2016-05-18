@@ -1,0 +1,6 @@
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Tres4Numbers\bin\Debug\Tres4Numbers.exe.config
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Tres4Numbers\bin\Debug\Tres4Numbers.exe
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Tres4Numbers\bin\Debug\Tres4Numbers.pdb
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Tres4Numbers\obj\Debug\Tres4Numbers.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Tres4Numbers\obj\Debug\Tres4Numbers.exe
+C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Tres4Numbers\obj\Debug\Tres4Numbers.pdb

@@ -1,0 +1,32 @@
+﻿namespace Tres4Numbers
+{
+    using System;
+    using System.Text;
+
+    public class TresFourNumbers
+    {
+        private const int NumeralSystemType = 9;
+        private static string[] numeralSystem = new string[NumeralSystemType]
+        {
+            "LON+", "VK-", "*ACAD", "^MIM", "ERIK|", "SEY&", "EMY>>", "/TEL", "<<DON"
+        };
+
+
+        public static void Main()
+        {
+            ulong inputNumber = ulong.Parse(Console.ReadLine());
+            StringBuilder resultText = new StringBuilder();
+
+            do
+            {
+                ulong tokenIndex = inputNumber % NumeralSystemType;
+                string token = numeralSystem[tokenIndex];
+
+                resultText.Insert(0, token);
+                inputNumber /= NumeralSystemType;
+            } while (inputNumber > 0);
+
+            Console.WriteLine(resultText);
+        }
+    }
+}

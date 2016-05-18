@@ -1,0 +1,87 @@
+﻿namespace DurankulakNumbers
+{
+    using System;
+    using System.Numerics;
+
+    public class DurankulakNumbers
+    {
+        private const int NumeralSystemType = 168;
+        private static string[] numeralSystem = new string[NumeralSystemType];
+
+        public static void Main()
+        {
+            string inputText = Console.ReadLine();
+            BigInteger resultNumber = 0;
+            int powIndex = 0;
+
+            FillCapitalTokens();
+            FillMixedTokens();
+
+            for (int i = inputText.Length - 1; i >= 0; i--, powIndex++)
+            {
+                if (inputText.Length > 1 && i >= 1)
+                {
+                    if (char.IsUpper(inputText[i]) && !char.IsLower(inputText[i - 1]))
+                    {
+                        string token = inputText[i] + string.Empty;
+                        int tokenValue = Array.IndexOf(numeralSystem, token);
+
+                        resultNumber += tokenValue * (long)Math.Pow(NumeralSystemType, powIndex);
+                        continue;
+                    }
+                    else if (char.IsUpper(inputText[i]) && char.IsLower(inputText[i - 1]))
+                    {
+                        string reversedToken = inputText[i - 1] + string.Empty + inputText[i];
+                        int tokenValue = Array.IndexOf(numeralSystem, reversedToken);
+
+                        resultNumber += tokenValue * (long)Math.Pow(NumeralSystemType, powIndex);
+                        i--;
+                    }
+                }
+                else
+                {
+                    resultNumber += Array.IndexOf(numeralSystem, inputText[i] + string.Empty) * (long)Math.Pow(NumeralSystemType, powIndex);
+                }
+            }
+
+            Console.WriteLine(resultNumber);
+        }
+
+        private static void FillCapitalTokens()
+        {
+            int index = 0;
+
+            for (char i = 'A'; i <= 'Z'; i++, index++)
+            {
+                numeralSystem[index] = i + string.Empty;
+            }
+        }
+
+        private static void FillMixedTokens()
+        {
+            int maxIndex = 168;
+            int index = 26;
+
+            for (char i = 'a'; i <= 'z'; i++)
+            {
+                bool isEnd = false;
+
+                for (char j = 'A'; j <= 'Z'; j++, index++)
+                {
+                    numeralSystem[index] = i + string.Empty + j;
+
+                    if (index == maxIndex - 1)
+                    {
+                        isEnd = true;
+                        break;
+                    }
+                }
+
+                if (isEnd)
+                {
+                    break;
+                }
+            }
+        }
+    }
+}

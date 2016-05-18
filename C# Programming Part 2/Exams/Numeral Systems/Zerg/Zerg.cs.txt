@@ -1,0 +1,48 @@
+﻿namespace Zerg
+{
+    using System;
+    using System.Numerics;
+
+    public class Zerg
+    {
+        private const int NumeralSystemType = 15;
+
+        private static string[] numeralSystem = new string[15]
+        {
+            "Rawr",
+            "Rrrr",
+            "Hsst",
+            "Ssst",
+            "Grrr",
+            "Rarr",
+            "Mrrr",
+            "Psst",
+            "Uaah",
+            "Uaha",
+            "Zzzz",
+            "Bauu",
+            "Djav",
+            "Myau",
+            "Gruh"
+        };
+
+        public static void Main()
+        {
+            string inputMessage = Console.ReadLine();
+            int powIndex = 0;
+            BigInteger resultNumber = 0;
+            int tokenLength = 4;
+
+            for (int i = inputMessage.Length - 1; i >= 0; i--, powIndex++)
+            {
+                string currentToken = inputMessage.Substring(i - 3, tokenLength);
+                long currentTokenValue = Array.IndexOf(numeralSystem, currentToken) * (long)Math.Pow(NumeralSystemType, powIndex);
+
+                i -= 3;
+                resultNumber += currentTokenValue;
+            }
+
+            Console.WriteLine(resultNumber);
+        }
+    }
+}

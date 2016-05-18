@@ -1,0 +1,44 @@
+﻿namespace DeCatCoding
+{
+    using System;
+    using System.Text;
+
+    public class DeCatCoding
+    {
+        public static void Main()
+        {
+            char[] numeralSystem = new char[26];
+            int index = 0;
+
+            for (char i = 'a'; i <= 'z'; i++, index++)
+            {
+                numeralSystem[index] = i;
+            }
+
+            string[] input = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            var result = new StringBuilder();
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                long currentNumber = 0;
+                var currentWord = new StringBuilder();
+                index = 0;
+
+                for (int j = input[i].Length - 1; j >= 0; j--, index++)
+                {
+                    currentNumber += Array.IndexOf(numeralSystem, input[i][j]) * (long)Math.Pow(21, index);
+                }
+
+                while (currentNumber > 0)
+                {
+                    currentWord.Insert(0, numeralSystem[currentNumber % 26]);
+                    currentNumber /= 26;
+                }
+
+                result.Append(currentWord.ToString() + " ");
+            }
+
+            Console.WriteLine(result.ToString());
+        }
+    }
+}

@@ -1,0 +1,35 @@
+﻿namespace _9GagNumbers
+{
+    using System;
+    using System.Numerics;
+    using System.Text;
+
+    public class NineGagNumbers
+    {
+        private const int NumeralSystemType = 9;
+        private static string[] numeralSystem = new string[NumeralSystemType]
+        {
+            "-!", "**", "!!!", "&&", "&-", "!-", "*!!!", "&*!", "!!**!-"
+        };
+
+        public static void Main()
+        {
+            StringBuilder input = new StringBuilder(Console.ReadLine());
+            BigInteger resultNumber = 0;
+
+            while (input.Length > 0)
+            {
+                for (int i = 0; i < numeralSystem.Length; i++)
+                {
+                    if (input.ToString().StartsWith(numeralSystem[i]))
+                    {
+                        resultNumber = resultNumber * NumeralSystemType + (ulong)i;
+                        input.Remove(0, numeralSystem[i].Length);
+                    }
+                }
+            }
+
+            Console.WriteLine(resultNumber);
+        }
+    }
+}
