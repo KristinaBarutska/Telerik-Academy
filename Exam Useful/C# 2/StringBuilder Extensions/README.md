@@ -13,7 +13,7 @@
         * IndexOf(char character, int start, int end)
         
     2. Strings
-        ! ignoreCase = false is just default value
+        ! ignoreCase = false is just the default value
         
         * IndexOf(string target, bool ignoreCase = false)
         * IndexOf(string target, int start, bool ignoreCase = false)
