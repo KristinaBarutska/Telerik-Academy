@@ -1,0 +1,132 @@
+html, body {
+  font-family: 'Segoe UI', 'Segoe UI Web', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0 auto;
+  width: 1000px;
+  font-weight: 400;
+  -webkit-text-stroke-width: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+body {
+  height: 570px;
+}
+
+header {
+  overflow: auto;
+  background-color: #077CC6;
+  font-size: 13px;
+}
+
+#logo {
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 195px;
+  height: 35px;
+  float: left;
+}
+
+#search {
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+  #search input {
+    width: 200px;
+    height: 25px;
+  }
+
+#menu {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+  #menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+    #menu li::first-letter {
+      text-transform: capitalize;
+    }
+
+    #menu li a {
+      text-decoration: none;
+      color: #E0E0E0;
+      font-weight: bold;
+    }
+
+#main {
+  padding-left: 15px;
+  padding-right: 10px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+code {
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+#main a {
+  text-decoration: none;
+  color: #DC143C;
+}
+
+h1 {
+  font-size: 53px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.mainImage {
+  float: right;
+  margin-top: 15px;
+  border: none;
+}
+
+p {
+  float: left;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#footer {
+  margin-top: 20px;
+  float: right;
+  width: 100%;
+  background-color: #077CC6;
+  color:	#E0E0E0;
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+  #footer .copyright {
+    text-align: center;
+    text-decoration: underline;
+  }
+    
+    #footer .copyright::first-letter {
+      text-transform: capitalize;
+    }
+
+    #footer .copyright a {
+      text-decoration: none;
+      color: #E0E0E0;
+    }
+
+  #footer div:nth-child(2) {
+    text-align: center;
+  }

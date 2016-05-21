@@ -1,0 +1,87 @@
+html,
+body {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*========== HEADER =============*/
+
+header {
+	background-image: url('images/header-bg.png');
+	background-repeat: repeat;
+}
+
+header h1 {
+	font-size: 16px;
+	text-transform: uppercase;
+	float: left;
+	color: #575E5B;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+header ul {
+	list-style-type: none;
+	float: right;
+	margin-right: 5px;
+}
+
+header li {
+	display: inline-block;
+	color: #575E5B;
+	margin-right: 15px;
+	font-size: 14px;
+}
+
+
+/*============== SEARCH ==================*/
+
+#searchBar {
+	background-color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#archives {
+	float: left;
+	color: #B9C6B9;
+	margin-left: 10px;
+}
+
+#archives a {
+	text-decoration: none;
+	color: #B9C6B9;
+	font-size: 14px;
+}
+
+#search {
+	float: right;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+#search a {
+	color: #B9C6B9;
+	text-decoration: none;
+}
+
+/*================ CONTENT =======================*/
+#content {
+	color: #575E5B;
+	font-size: 14px;
+}
+
+#content h1 {
+	font-size: 24px;
+
+}

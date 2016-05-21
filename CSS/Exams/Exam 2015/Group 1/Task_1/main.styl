@@ -1,0 +1,76 @@
+body
+	font-size 16px
+	font-family "Times New Roman"
+	color #000000
+	margin 0
+	padding 0
+
+#root
+	.avengers
+		list-style-type none
+		margin 0
+		padding 0
+		margin-top 15px
+
+		.avenger
+			border 3px solid black
+			display inline
+			padding 10px 12px 10px 15px
+			border-radius 15px 0 0 0
+			border-right none
+			font-weight bold
+			font-size 1em
+			position relative
+						
+			.name
+				font-weight bold
+
+			&:last-child
+				border-right 3px solid black
+
+			.preview
+				display none
+				
+
+			&:hover 
+				background-color #CCCCCC
+				border-bottom 3px solid white
+				text-decoration underline
+
+				.preview 
+					display block
+					position absolute
+					border 3px solid black
+					border-top none
+					width 630px
+					top 40px
+					background-color #CCCCCC
+										
+					img 
+						width 400px
+						float left
+						margin 15px
+						clear both
+						border 5px solid white
+						border-radius 5px
+						
+					.skills
+						float right
+						list-style-type none
+						margin-top 55px
+						padding 0
+						text-align center
+						
+						li
+							font-size 1.4em
+							margin 0 auto
+							margin-bottom 40px
+							text-align center
+							width 190px
+							font-weight normal
+							
+							&:first-letter
+								text-transform uppercase
+
+							&:hover
+								text-decoration underline
