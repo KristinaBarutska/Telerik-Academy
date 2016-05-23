@@ -1,6 +1,0 @@
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Zerg\bin\Debug\Zerg.exe.config
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Zerg\bin\Debug\Zerg.exe
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Zerg\bin\Debug\Zerg.pdb
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Zerg\obj\Debug\Zerg.csprojResolveAssemblyReference.cache
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Zerg\obj\Debug\Zerg.exe
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\Zerg\obj\Debug\Zerg.pdb

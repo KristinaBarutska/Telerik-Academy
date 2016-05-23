@@ -1,6 +1,0 @@
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\DurankulakNumbers\bin\Debug\DurankulakNumbers.exe.config
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\DurankulakNumbers\bin\Debug\DurankulakNumbers.exe
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\DurankulakNumbers\bin\Debug\DurankulakNumbers.pdb
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\DurankulakNumbers\obj\Debug\DurankulakNumbers.csprojResolveAssemblyReference.cache
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\DurankulakNumbers\obj\Debug\DurankulakNumbers.exe
-C:\Users\belch\Desktop\Doom\Exams\C#2 Exams\Tasks_01\DurankulakNumbers\obj\Debug\DurankulakNumbers.pdb
