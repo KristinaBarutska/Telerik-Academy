@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border: 20px solid #808080;
+    background: rgba(114, 114, 114, 1);
+    background: -moz-linear-gradient(top, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 0.83) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(114, 114, 114, 1)), color-stop(100%, rgba(255, 255, 255, 0.83)));
+    background: -webkit-linear-gradient(top, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 0.83) 100%);
+    background: -o-linear-gradient(top, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 0.83) 100%);
+    background: -ms-linear-gradient(top, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 0.83) 100%);
+    background: linear-gradient(to bottom, rgba(114, 114, 114, 1) 0%, rgba(255, 255, 255, 0.83) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#727272', endColorstr='#ffffff', GradientType=0);
+    float: left;
+    margin-right: 5px;
+}
+
+.menu .click-here {
+    display: none;
+}
+
+.menu li h3, p {
+    text-align: center;
+    margin: 0;
+}
+
+.menu li h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #FFFFEA;
+}
+
+.menu .image-container {
+    margin: 0;
+}
+
+.menu .image-container img {
+    width: 120px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.menu li:hover {
+    border-color: #454545;
+    background: #808080;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.menu li:hover .image-container img {
+    width: 140px;
+    margin-right: 5px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.menu li:hover h3 {
+    text-decoration: underline;
+}
+
+.menu li:hover .subtitle {
+    display: none;
+}
+
+.menu li:hover .click-here {
+    display: block;
+    text-transform: uppercase;
+    color: #FFFFEA;
+}
