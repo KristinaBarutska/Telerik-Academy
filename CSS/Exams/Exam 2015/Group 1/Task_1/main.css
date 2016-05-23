@@ -30,12 +30,12 @@ body {
 #root .avengers .avenger .preview {
   display: none;
 }
-#root .avengers .avenger:hover {
+#root .avengers .avenger.hover {
   background-color: #ccc;
   border-bottom: 3px solid #fff;
   text-decoration: underline;
 }
-#root .avengers .avenger:hover .preview {
+#root .avengers .avenger.hover .preview {
   display: block;
   position: absolute;
   border: 3px solid #000;
@@ -44,7 +44,7 @@ body {
   top: 40px;
   background-color: #ccc;
 }
-#root .avengers .avenger:hover .preview img {
+#root .avengers .avenger.hover .preview img {
   width: 400px;
   float: left;
   margin: 15px;
@@ -52,14 +52,14 @@ body {
   border: 5px solid #fff;
   border-radius: 5px;
 }
-#root .avengers .avenger:hover .preview .skills {
+#root .avengers .avenger.hover .preview .skills {
   float: right;
   list-style-type: none;
   margin-top: 55px;
   padding: 0;
   text-align: center;
 }
-#root .avengers .avenger:hover .preview .skills li {
+#root .avengers .avenger.hover .preview .skills li {
   font-size: 1.4em;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -67,9 +67,9 @@ body {
   width: 190px;
   font-weight: normal;
 }
-#root .avengers .avenger:hover .preview .skills li:first-letter {
+#root .avengers .avenger.hover .preview .skills li:first-letter {
   text-transform: uppercase;
 }
-#root .avengers .avenger:hover .preview .skills li:hover {
+#root .avengers .avenger.hover .preview .skills li:hover {
   text-decoration: underline;
 }
