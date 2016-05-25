@@ -1,1 +1,0 @@
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\TheBiggestOfThree\bin\Debug\TheBiggestOfThree.exe.config

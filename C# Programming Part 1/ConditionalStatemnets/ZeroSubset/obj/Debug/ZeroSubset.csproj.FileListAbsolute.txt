@@ -1,6 +1,0 @@
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ZeroSubset\bin\Debug\ZeroSubset.exe.config
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ZeroSubset\bin\Debug\ZeroSubset.exe
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ZeroSubset\bin\Debug\ZeroSubset.pdb
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ZeroSubset\obj\Debug\ZeroSubset.csprojResolveAssemblyReference.cache
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ZeroSubset\obj\Debug\ZeroSubset.exe
-C:\Users\g-belchev\Desktop\TelerikAcademy\HomeWorks\C# Programming Part 1\ConditionalStatemnets\ZeroSubset\obj\Debug\ZeroSubset.pdb

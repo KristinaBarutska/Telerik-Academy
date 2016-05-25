@@ -1,6 +1,0 @@
-C:\Users\Larisa\Desktop\OOP\Bitwise Simulation\BitwiseOperationsWithArrays\bin\Debug\BitwiseOperationsWithArrays.exe.config
-C:\Users\Larisa\Desktop\OOP\Bitwise Simulation\BitwiseOperationsWithArrays\bin\Debug\BitwiseOperationsWithArrays.exe
-C:\Users\Larisa\Desktop\OOP\Bitwise Simulation\BitwiseOperationsWithArrays\bin\Debug\BitwiseOperationsWithArrays.pdb
-C:\Users\Larisa\Desktop\OOP\Bitwise Simulation\BitwiseOperationsWithArrays\obj\Debug\BitwiseOperationsWithArrays.csprojResolveAssemblyReference.cache
-C:\Users\Larisa\Desktop\OOP\Bitwise Simulation\BitwiseOperationsWithArrays\obj\Debug\BitwiseOperationsWithArrays.exe
-C:\Users\Larisa\Desktop\OOP\Bitwise Simulation\BitwiseOperationsWithArrays\obj\Debug\BitwiseOperationsWithArrays.pdb
