@@ -1,0 +1,103 @@
+body {
+  font-size: 18px;
+  color: #2AA0BD;
+  font-family: Arial;
+}
+#root {
+  margin: 0 auto;
+  width: 620px;
+}
+#root h1 {
+  text-align: center;
+  font-style: italic;
+  width: 600px;
+}
+#root #me,
+#root #other {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+  margin-right: 5px;
+  background: #4ae871;
+  background: -moz-linear-gradient(top, #4ae871 0%, rgba(241, 255, 188, 0.83) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #4ae871), color-stop(100%, rgba(241, 255, 188, 0.83)));
+  background: -webkit-linear-gradient(top, #4ae871 0%, rgba(241, 255, 188, 0.83) 100%);
+  background: -o-linear-gradient(top, #4ae871 0%, rgba(241, 255, 188, 0.83) 100%);
+  background: -ms-linear-gradient(top, #4ae871 0%, rgba(241, 255, 188, 0.83) 100%);
+  background: linear-gradient(to bottom, #4ae871 0%, rgba(241, 255, 188, 0.83) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ae871', endColorstr='#f1ffbc', GradientType=0);
+}
+#root #me h2,
+#root #other h2 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+#root #me strong,
+#root #other strong {
+  font-style: italic;
+  font-weight: normal;
+}
+#root .messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+#root .messages ul .me {
+  float: left;
+}
+#root .messages ul .other {
+  float: right;
+}
+#root .messages span {
+  display: block;
+}
+#root #me {
+  float: left;
+}
+#root #me .me {
+  border-bottom: 1px solid black;
+  width: 270px;
+}
+#root #me .other {
+  margin-right: 15px;
+  text-align: right;
+}
+#root #me .messages {
+  margin-left: 15px;
+}
+#root #other {
+  float: left;
+}
+#root #other .other {
+  border-bottom: 1px solid black;
+  width: 270px;
+  text-align: right;
+}
+#root #other .me {
+  margin-left: 15px;
+}
+#root #other .messages {
+  margin-right: 15px;
+}
+#root .sent-message {
+  clear: both;
+  padding-top: 280px;
+  margin-left: 10px;
+}
+#root .sent-message input {
+  height: 30px;
+  width: 200px;
+  font-size: 14px;
+}
+#root .sent-message button {
+  height: 35px;
+  color: #2AA0BD;
+  font-size: 20px;
+  width: 70px;
+}
+#root .sent-message input,
+#root .sent-message button {
+  border: 1px solid #CCCCCC;
+  border-radius: 10px 10px 0 0;
+  background: transparent;
+}
