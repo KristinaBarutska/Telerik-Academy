@@ -1,0 +1,102 @@
+body {
+    font-family: 'Times New Roman';
+    font-size: 14px;
+}
+
+#root {
+    display: inline-block;
+    overflow: auto;
+    width: 700px;
+}
+
+#root #previewer {
+    overflow: auto;
+}
+
+#root #previewer #large {
+    float: left;
+    width: 495px;
+    padding-bottom: 15px;
+    border: 2px solid #999;
+}
+
+#root #previewer #large h1 {
+    text-align: center;
+}
+
+#root #previewer #large img {
+    width: 448px;
+    margin-left: 20px;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+#root #previewer #list {
+    float: right;
+    width: 197px;
+    border: 2px solid #999;
+}
+
+#root #previewer #list .title {
+    font-size: 22px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#root #previewer #list button {
+    font-size: 16px;
+    width: 96px;
+    height: 46px;
+    padding: 0;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+#root #previewer #list button:hover {
+    background-color: #ccc;
+}
+
+#root #previewer #list #btn-next {
+    width: 97px;
+}
+
+#root #previewer #list ul {
+    overflow: auto;
+    height: 280px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#root #previewer #list ul li {
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+    border-bottom: 2px solid #999;
+}
+
+#root #previewer #list ul li:hover strong {
+    text-decoration: underline;
+}
+
+#root #previewer #list ul strong {
+    display: block;
+}
+
+#root #previewer #list ul img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#root #previewer #list ul .current {
+    border-bottom: 2px solid #999;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+#root #previewer #list ul .current img {
+    width: 65px;
+}
