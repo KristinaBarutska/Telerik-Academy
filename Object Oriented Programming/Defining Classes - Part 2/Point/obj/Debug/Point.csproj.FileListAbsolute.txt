@@ -1,0 +1,6 @@
+C:\Users\belch\Desktop\FutureHomeworks\Object Oriented Programming\Defining Classes - Part 2\Point\bin\Debug\Point.exe.config
+C:\Users\belch\Desktop\FutureHomeworks\Object Oriented Programming\Defining Classes - Part 2\Point\bin\Debug\Point.exe
+C:\Users\belch\Desktop\FutureHomeworks\Object Oriented Programming\Defining Classes - Part 2\Point\bin\Debug\Point.pdb
+C:\Users\belch\Desktop\FutureHomeworks\Object Oriented Programming\Defining Classes - Part 2\Point\obj\Debug\Point.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\FutureHomeworks\Object Oriented Programming\Defining Classes - Part 2\Point\obj\Debug\Point.exe
+C:\Users\belch\Desktop\FutureHomeworks\Object Oriented Programming\Defining Classes - Part 2\Point\obj\Debug\Point.pdb
