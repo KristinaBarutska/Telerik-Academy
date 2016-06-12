@@ -114,7 +114,7 @@
             }
         }
 
-        public GSM IPhone
+        public static GSM IPhone
         {
             get
             {

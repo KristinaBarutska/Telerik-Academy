@@ -23,7 +23,6 @@
 
             PrintMobileDevicesInfo(mobileDevices);
             Console.WriteLine(new string('-', 30));
-            Console.WriteLine(mobileDevices[0].IPhone);
         }
 
         private static void PrintMobileDevicesInfo(GSM[] mobileDevices)
