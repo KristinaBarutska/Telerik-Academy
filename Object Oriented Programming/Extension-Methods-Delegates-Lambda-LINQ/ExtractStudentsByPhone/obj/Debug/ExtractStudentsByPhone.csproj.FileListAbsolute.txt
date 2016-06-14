@@ -1,0 +1,8 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\bin\Debug\ExtractStudentsByPhone.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\bin\Debug\ExtractStudentsByPhone.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\bin\Debug\ExtractStudentsByPhone.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\bin\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\bin\Debug\Student.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\obj\Debug\ExtractStudentsByPhone.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\obj\Debug\ExtractStudentsByPhone.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByPhone\obj\Debug\ExtractStudentsByPhone.pdb

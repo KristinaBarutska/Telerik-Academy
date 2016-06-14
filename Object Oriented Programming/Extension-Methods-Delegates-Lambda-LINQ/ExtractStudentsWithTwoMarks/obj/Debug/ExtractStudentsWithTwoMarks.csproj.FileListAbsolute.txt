@@ -1,0 +1,8 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\bin\Debug\ExtractStudentsWithTwoMarks.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\bin\Debug\ExtractStudentsWithTwoMarks.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\bin\Debug\ExtractStudentsWithTwoMarks.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\bin\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\bin\Debug\Student.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\obj\Debug\ExtractStudentsWithTwoMarks.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\obj\Debug\ExtractStudentsWithTwoMarks.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsWithTwoMarks\obj\Debug\ExtractStudentsWithTwoMarks.pdb

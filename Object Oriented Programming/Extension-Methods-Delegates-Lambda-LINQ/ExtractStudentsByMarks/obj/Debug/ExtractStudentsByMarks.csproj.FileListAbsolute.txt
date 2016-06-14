@@ -1,0 +1,8 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\bin\Debug\ExtractStudentsByMarks.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\bin\Debug\ExtractStudentsByMarks.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\bin\Debug\ExtractStudentsByMarks.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\bin\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\bin\Debug\Student.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\obj\Debug\ExtractStudentsByMarks.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\obj\Debug\ExtractStudentsByMarks.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\ExtractStudentsByMarks\obj\Debug\ExtractStudentsByMarks.pdb

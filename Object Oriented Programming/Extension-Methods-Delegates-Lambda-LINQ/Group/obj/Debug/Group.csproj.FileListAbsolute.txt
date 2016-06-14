@@ -1,0 +1,8 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\bin\Debug\Group.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\bin\Debug\Group.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\bin\Debug\Group.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\bin\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\bin\Debug\Student.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\obj\Debug\Group.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\obj\Debug\Group.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\Group\obj\Debug\Group.pdb

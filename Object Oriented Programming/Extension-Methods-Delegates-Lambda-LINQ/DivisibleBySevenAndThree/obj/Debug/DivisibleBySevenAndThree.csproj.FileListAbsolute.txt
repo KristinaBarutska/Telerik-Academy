@@ -1,0 +1,5 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\DivisibleBySevenAndThree\bin\Debug\DivisibleBySevenAndThree.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\DivisibleBySevenAndThree\bin\Debug\DivisibleBySevenAndThree.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\DivisibleBySevenAndThree\bin\Debug\DivisibleBySevenAndThree.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\DivisibleBySevenAndThree\obj\Debug\DivisibleBySevenAndThree.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\DivisibleBySevenAndThree\obj\Debug\DivisibleBySevenAndThree.pdb

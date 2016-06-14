@@ -1,0 +1,6 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\bin\Debug\IEnumerableExtensions.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\bin\Debug\IEnumerableExtensions.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\bin\Debug\IEnumerableExtensions.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\obj\Debug\IEnumerableExtensions.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\obj\Debug\IEnumerableExtensions.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\IEnumerableExtensions\obj\Debug\IEnumerableExtensions.pdb

@@ -1,0 +1,6 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StringBuilderSubstring\bin\Debug\StringBuilderSubstring.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StringBuilderSubstring\bin\Debug\StringBuilderSubstring.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StringBuilderSubstring\bin\Debug\StringBuilderSubstring.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StringBuilderSubstring\obj\Debug\StringBuilderSubstring.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StringBuilderSubstring\obj\Debug\StringBuilderSubstring.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StringBuilderSubstring\obj\Debug\StringBuilderSubstring.pdb

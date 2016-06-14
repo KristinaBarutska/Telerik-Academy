@@ -1,0 +1,7 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StudentGroupsExtensions\bin\Debug\StudentGroupsExtensions.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StudentGroupsExtensions\bin\Debug\StudentGroupsExtensions.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StudentGroupsExtensions\bin\Debug\StudentGroupsExtensions.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StudentGroupsExtensions\bin\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StudentGroupsExtensions\bin\Debug\Student.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StudentGroupsExtensions\obj\Debug\StudentGroupsExtensions.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\StudentGroupsExtensions\obj\Debug\StudentGroupsExtensions.pdb

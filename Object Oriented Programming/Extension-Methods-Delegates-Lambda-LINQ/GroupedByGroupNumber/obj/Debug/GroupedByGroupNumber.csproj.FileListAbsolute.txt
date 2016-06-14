@@ -1,0 +1,7 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\GroupedByGroupNumber\bin\Debug\GroupedByGroupNumber.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\GroupedByGroupNumber\bin\Debug\GroupedByGroupNumber.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\GroupedByGroupNumber\bin\Debug\GroupedByGroupNumber.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\GroupedByGroupNumber\bin\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\GroupedByGroupNumber\bin\Debug\Student.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\GroupedByGroupNumber\obj\Debug\GroupedByGroupNumber.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Extension-Methods-Delegates-Lambda-LINQ\GroupedByGroupNumber\obj\Debug\GroupedByGroupNumber.pdb
