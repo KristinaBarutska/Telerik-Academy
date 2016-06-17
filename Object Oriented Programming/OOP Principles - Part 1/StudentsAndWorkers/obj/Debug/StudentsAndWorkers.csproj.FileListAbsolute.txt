@@ -1,0 +1,9 @@
+C:\Users\belch\Desktop\Stuff\FutureHomeworks\Object Oriented Programming\OOP Principles - Part 1\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.exe.config
+C:\Users\belch\Desktop\Stuff\FutureHomeworks\Object Oriented Programming\OOP Principles - Part 1\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.exe
+C:\Users\belch\Desktop\Stuff\FutureHomeworks\Object Oriented Programming\OOP Principles - Part 1\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.pdb
+C:\Users\belch\Desktop\Stuff\FutureHomeworks\Object Oriented Programming\OOP Principles - Part 1\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\Stuff\FutureHomeworks\Object Oriented Programming\OOP Principles - Part 1\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.exe
+C:\Users\belch\Desktop\Stuff\FutureHomeworks\Object Oriented Programming\OOP Principles - Part 1\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.pdb
+C:\Users\belch\Desktop\Academy\OOP\Homeworks\OOP Principles - Part 1\StudentsAndWorkers\bin\Debug\StudentsAndWorkers.exe.config
+C:\Users\belch\Desktop\Academy\OOP\Homeworks\OOP Principles - Part 1\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.exe
+C:\Users\belch\Desktop\Academy\OOP\Homeworks\OOP Principles - Part 1\StudentsAndWorkers\obj\Debug\StudentsAndWorkers.pdb
