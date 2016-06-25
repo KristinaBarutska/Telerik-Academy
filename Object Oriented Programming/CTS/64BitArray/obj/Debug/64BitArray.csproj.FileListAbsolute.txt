@@ -1,0 +1,6 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\64BitArray\bin\Debug\64BitArray.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\64BitArray\bin\Debug\64BitArray.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\64BitArray\bin\Debug\64BitArray.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\64BitArray\obj\Debug\64BitArray.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\64BitArray\obj\Debug\64BitArray.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\64BitArray\obj\Debug\64BitArray.pdb

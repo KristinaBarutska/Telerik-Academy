@@ -1,0 +1,9 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Person\bin\Debug\Person.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Person\bin\Debug\Person.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Person\bin\Debug\Person.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Person\obj\Debug\Person.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Person\obj\Debug\Person.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Person\obj\Debug\Person.pdb
+C:\Users\belch\Desktop\Programming\Stuff\Current cources\OOP\Common Type System\Person\bin\Debug\Person.exe.config
+C:\Users\belch\Desktop\Programming\Stuff\Current cources\OOP\Common Type System\Person\obj\Debug\Person.exe
+C:\Users\belch\Desktop\Programming\Stuff\Current cources\OOP\Common Type System\Person\obj\Debug\Person.pdb

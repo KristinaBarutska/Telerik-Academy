@@ -1,0 +1,12 @@
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Student\bin\Debug\Student.exe.config
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Student\obj\Debug\Student.csprojResolveAssemblyReference.cache
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Student\bin\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Student\bin\Debug\Student.pdb
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Student\obj\Debug\Student.exe
+F:\Stuff\FutureHomeworks\Object Oriented Programming\Common Type System\Student\obj\Debug\Student.pdb
+C:\Users\belch\Desktop\Academy\OOP\Homeworks\Common Type System\Student\bin\Debug\Student.exe.config
+C:\Users\belch\Desktop\Academy\OOP\Homeworks\Common Type System\Student\obj\Debug\Student.exe
+C:\Users\belch\Desktop\Academy\OOP\Homeworks\Common Type System\Student\obj\Debug\Student.pdb
+C:\Users\belch\Desktop\Programming\Stuff\Current cources\OOP\Common Type System\Student\bin\Debug\Student.exe.config
+C:\Users\belch\Desktop\Programming\Stuff\Current cources\OOP\Common Type System\Student\obj\Debug\Student.exe
+C:\Users\belch\Desktop\Programming\Stuff\Current cources\OOP\Common Type System\Student\obj\Debug\Student.pdb
