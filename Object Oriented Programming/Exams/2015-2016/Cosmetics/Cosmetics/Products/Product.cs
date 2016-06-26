@@ -3,26 +3,29 @@
     using System;
     using System.Text;
 
-    using Contracts;
     using Common;
+    using Contracts;
 
-    public abstract class Product : IProduct
+    internal abstract class Product : IProduct
     {
-        private const int MinProductNameLength = 3;
-        private const int MaxProductNameLength = 10;
+        private const string ProductBrand = "Product brand";
+        private const string ProductGender = "Product gender";
+        private const string ProductName = "Product name";
+        private const string PriceMustBePositiveNumber = "Product price must be positive number!";
         private const int MinBrandNameLength = 2;
         private const int MaxBrandNameLength = 10;
-        private const string ProductName = "Product name";
-        private const string ProductBrand = "Product brand";
-        private const string InvalidPriceMessage = "Price must bepositive number!";
+        private const int MinProductNameLength = 3;
+        private const int MaxProductNameLength = 10;
 
         private string brand;
+        private GenderType gender;
         private string name;
         private decimal price;
 
-        public Product(string brand, GenderType gender, string name, decimal price)
+        internal Product(string brand, GenderType gender, string name, decimal price)
         {
             this.Brand = brand;
+            this.Gender = gender;
             this.Name = name;
             this.Price = price;
         }
@@ -45,7 +48,16 @@
 
         public GenderType Gender
         {
-            get; private set;
+            get
+            {
+                return this.gender;
+            }
+
+            private set
+            {
+                Validator.CheckIfNull(value, string.Format(GlobalErrorMessages.ObjectCannotBeNull, Gender));
+                this.gender = value;
+            }
         }
 
         public string Name
@@ -57,9 +69,9 @@
 
             private set
             {
+                Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, ProductName));
                 Validator.CheckIfStringLengthIsValid(value, MaxProductNameLength, MinProductNameLength,
                     string.Format(GlobalErrorMessages.InvalidStringLength, ProductName, MinProductNameLength, MaxProductNameLength));
-                Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, ProductName));
                 this.name = value;
             }
         }
@@ -71,34 +83,24 @@
                 return this.price;
             }
 
-            private set
+            protected set
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException(InvalidPriceMessage);
+                    throw new ArgumentException(PriceMustBePositiveNumber);
                 }
-                else
-                {
-                    this.price = value;
-                }
+
+                this.price = value;
             }
         }
 
         public virtual string Print()
         {
             var result = new StringBuilder();
-            string gender = string.Empty;
-
-            switch (this.Gender)
-            {
-                case GenderType.Men: gender = "Men"; break;
-                case GenderType.Women: gender = "Women"; break;
-                case GenderType.Unisex: gender = "Unisex"; break;
-            }
 
             result.AppendLine(string.Format("- {0} - {1}:", this.Brand, this.Name));
             result.AppendLine(string.Format("  * Price: ${0}", this.Price));
-            result.AppendLine(string.Format("  * For gender: {0}", gender));
+            result.AppendLine(string.Format("  * For gender: {0}", this.Gender));
 
             return result.ToString();
         }

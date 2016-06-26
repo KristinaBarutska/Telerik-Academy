@@ -3,35 +3,35 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    using Common;
-    using Contracts;
+    using Cosmetics.Contracts;
+    using Cosmetics.Common;
 
-    public class ShoppingCart : IShoppingCart
+
+    internal class ShoppingCart : IShoppingCart
     {
-        private const string ProductString = "Product";
+        private const string Product = "Product";
 
-        private IList<IProduct> products;
+        private ICollection<IProduct> products;
 
-        public ShoppingCart()
+        internal ShoppingCart()
         {
             this.products = new List<IProduct>();
         }
 
         public void AddProduct(IProduct product)
         {
-            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, ProductString));
+            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, Product));
             this.products.Add(product);
         }
 
         public bool ContainsProduct(IProduct product)
         {
-            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, ProductString));
+            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, Product));
             return this.products.Contains(product);
         }
 
         public void RemoveProduct(IProduct product)
         {
-            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, ProductString));
             this.products.Remove(product);
         }
 
