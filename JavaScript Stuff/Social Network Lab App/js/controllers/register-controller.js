@@ -1,23 +1,19 @@
 (function() {
     'use strict';
-    
-    define(['jquery', 'mustache'], ($, Mustache) => {
+
+    define(['registerView'], (registerView) => {
         let registerController = (function() {
             let registerController = {};
 
             Object.defineProperty(registerController, 'loadRegister', {
                 value(selector) {
-                    $.get('./views/register.html', view => {
-                        let output = Mustache.render(view, {});
-                        $(selector).empty();
-                        $(selector).append(output);
-                    });
+                    registerView.render(selector);
                 }
             });
-            
+
             return registerController;
         }());
-        
+
         return registerController;
     });
 }());

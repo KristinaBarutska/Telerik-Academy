@@ -1,4 +1,4 @@
-(function () {
+(function() {
     'use strict';
 
     require.config({
@@ -14,28 +14,31 @@
             'posts': './models/posts',
             'homeController': './controllers/home-controller',
             'loginController': './controllers/login-controller',
-            'registerController': './controllers/register-controller'
+            'registerController': './controllers/register-controller',
+            'homeView': './views/home-view',
+            'loginView': './views/login-view',
+            'registerView': './views/register-view'
         }
     });
 
     require(['sammy', 'homeController', 'loginController', 'registerController'],
         (Sammy, homeController, loginController, registerController) => {
-        let mainSelector = '#main';
-        
-        let router = Sammy(function () {
-            this.get('#/', function () {
-                homeController.loadHome(mainSelector);
+            let mainSelector = '#main';
+
+            let router = Sammy(function() {
+                this.get('#/', function() {
+                    homeController.loadHome(mainSelector);
+                });
+
+                this.get('#/login', function() {
+                    loginController.loadLogin(mainSelector);
+                });
+
+                this.get('#/register', function() {
+                    registerController.loadRegister(mainSelector);
+                });
             });
 
-            this.get('#/login', function () {
-                loginController.loadLogin(mainSelector);
-            });
-
-            this.get('#/register', function () {
-                registerController.loadRegister(mainSelector);
-            });
+            router.run('#/');
         });
-
-        router.run('#/');
-    });
 }());
