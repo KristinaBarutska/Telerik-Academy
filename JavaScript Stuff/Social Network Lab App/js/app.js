@@ -35,7 +35,7 @@
                 });
 
                 this.get('#/register', function() {
-                    registerController.loadRegister(mainSelector);
+                    registerController.loadRegister(mainSelector, '#btn-register');
                 });
             });
 

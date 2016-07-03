@@ -1,8 +1,8 @@
-(function () {
+(function() {
     'use strict';
 
     define(['requester', 'url', 'header', 'storage'], (requester, url, header, storage) => {
-        let user = (function () {
+        let user = (function() {
             let user = {};
             let appCredentials = header.getAppCredentials();
 
@@ -26,12 +26,7 @@
             });
 
             Object.defineProperty(user, 'register', {
-                value(username, password) {
-                    let data = {
-                        username: username,
-                        password: password
-                    };
-
+                value(data) {
                     return requester.post(url.baseUserUrl, appCredentials, data);
                 }
             });

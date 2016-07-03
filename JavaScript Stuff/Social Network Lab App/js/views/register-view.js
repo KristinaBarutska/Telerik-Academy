@@ -7,11 +7,23 @@
 
             Object.defineProperty(registerView, 'render', {
                 value(selector) {
-                    $.get('./views/register.html', view => {
+                    return $.get('./views/register.html', view => {
                         let output = Mustache.render(view, {});
                         $(selector).empty();
                         $(selector).append(output);
                     });
+                }
+            });
+
+            Object.defineProperty(registerView, 'getRegisterInfo', {
+                value() {
+                    return {
+                        username: $('#reg-username').val(),
+                        password: $('#reg-password').val(),
+                        name: $('#reg-name').val(),
+                        aboutMe: $('#reg-about').val(),
+                        gender: $('input[name=gender-radio]:checked').val()
+                    };
                 }
             });
 
