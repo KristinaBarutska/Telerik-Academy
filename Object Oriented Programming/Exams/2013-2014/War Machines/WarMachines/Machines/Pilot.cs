@@ -5,14 +5,21 @@
     using System.Text;
 
     using Common;
-    using Interfaces;
+    using WarMachines.Interfaces;
 
-    public class Pilot : IPilot
+    internal class Pilot : IPilot
     {
-        private string name;
-        private IList<IMachine> machines;
+        private const string PilotName = "Pilot's name";
+        private const string PilotMachine = "Pilot's machine";
+        private const string PilotInformationFormatString = "{0} - {1} {2}";
+        private const string NoMachines = "no";
+        private const string SingleMachine = "machine";
+        private const string ZeroOrMoreThanOneMachines = "machines";
 
-        public Pilot(string name)
+        private string name;
+        private ICollection<IMachine> machines;
+
+        internal Pilot(string name)
         {
             this.Name = name;
             this.machines = new List<IMachine>();
@@ -27,44 +34,36 @@
 
             private set
             {
-                Validator.ValidateIfStirngIsNullOrEmpty(value, "Pilot name");
+                Validator.ValidateString(value, PilotName);
                 this.name = value;
             }
         }
 
         public void AddMachine(IMachine machine)
         {
-            Validator.ValidateIfMachineIsNotNull(machine);
+            Validator.ValidateObject(machine, PilotMachine);
             this.machines.Add(machine);
         }
 
         public string Report()
         {
-            var result = new StringBuilder();
-            string machinesCountString = string.Empty;
+            var report = new StringBuilder();
+            string machinesCount = this.machines.Count == 0 ? NoMachines : this.machines.Count.ToString();
+            string machinesCountString = this.machines.Count == 1 ? SingleMachine : ZeroOrMoreThanOneMachines;
 
             this.machines = this.machines
-                .OrderBy(m => m.HealthPoints)
-                .ThenBy(m => m.Name)
-                .ToList();
+                                .OrderBy(m => m.HealthPoints)
+                                .ThenBy(m => m.Name)
+                                .ToList();
 
-            switch (this.machines.Count)
+            report.AppendLine(string.Format(PilotInformationFormatString, this.Name, machinesCount, machinesCountString));
+
+            foreach (var machine in this.machines)
             {
-                case 0:
-                    result.AppendLine(string.Format("{0} – {1} {2}", this.Name, "no", "machines"));
-                    break;
-                case 1:
-                    result.AppendLine(string.Format("{0} – {1} {2}", this.Name, "1", "machine"));
-                    break;
-                default:
-                    result.AppendLine(string.Format("{0} – {1} {2}", this.Name, this.machines.Count, "machines"));
-                    break;
+                report.Append(machine.ToString());
             }
 
-            result.AppendLine(string.Format("{0} – {1} {2}", this.Name, this.machines.Count, machinesCountString));
-            result.AppendLine(string.Join(string.Empty, this.machines));
-
-            return result.ToString().Trim();
+            return report.ToString().TrimEnd();
         }
     }
 }

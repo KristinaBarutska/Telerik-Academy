@@ -1,54 +1,44 @@
 ﻿namespace WarMachines.Machines
 {
-    using System.Collections.Generic;
     using System.Text;
 
-    using Interfaces;
+    using WarMachines.Interfaces;
 
-    public class Fighter : Machine, IFighter
+    internal class Fighter : Machine, IFighter
     {
         private const double InitialHealthPoints = 200;
+        private const string FighterStealthModeFormatString = " *Stealth: {0}";
 
-        private bool stealthMode;
-
-        public Fighter(string name, double attackPoints, double defensePoints, bool stealthMode)
-            : base(name, attackPoints, defensePoints, InitialHealthPoints)
+        internal Fighter(string name, double attackPoints, double defensePoints, bool stealthMode)
+            : base(name, attackPoints, defensePoints)
         {
-            this.stealthMode = stealthMode;
+            this.StealthMode = stealthMode;
+            this.HealthPoints = InitialHealthPoints;
         }
 
         public bool StealthMode
         {
-            get
-            {
-                return this.stealthMode;
-            }
-
-            private set
-            {
-                this.stealthMode = value;
-            }
+            get; private set;
         }
 
         public void ToggleStealthMode()
         {
-            if (this.StealthMode)
+            if (!this.StealthMode)
             {
-                this.StealthMode = false;
+                this.StealthMode = true;
             }
             else
             {
-                this.StealthMode = true;
+                this.StealthMode = false;
             }
         }
 
         public override string ToString()
         {
             var result = new StringBuilder(base.ToString());
-            string stealthModeString = this.StealthMode ? "ON" : "OFF";
 
-            result.AppendLine(string.Format(" *Stealth: {0}", stealthModeString));
-
+            result.AppendLine(string.Format(FighterStealthModeFormatString,
+                this.StealthMode ? MachineSpecialAbilityOn : MachineSpecialAbilityOff));
             return result.ToString();
         }
     }

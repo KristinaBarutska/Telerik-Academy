@@ -2,44 +2,29 @@
 {
     using System;
 
-    using Interfaces;
-
-    public static class Validator
+    internal static class Validator
     {
-        private const string StringIsNullOrEmptyMessage = "{0} cannot be null or empty string!";
-        private const string NegativeDoubleNumberMessage = "{0} cannot be negative number!";
-        private const string NullPilotMessage = "Pilot cannot be null!";
-        private const string NullMachineMessage = "Machine cannot be null!";
-
-        public static void ValidateIfStirngIsNullOrEmpty(string value, string propertyName)
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                throw new ArgumentException(string.Format(StringIsNullOrEmptyMessage, propertyName));
-            }
-        }
-
-        public static void ValidateIfDoubleNumberIsPositive(double value, string propertyName)
+        internal static void ValidateDouble(double value, string propertyName)
         {
             if (value < 0)
             {
-                throw new ArgumentException(string.Format(NegativeDoubleNumberMessage, propertyName));
+                throw new ArgumentException(string.Format(GlobalErrorMessages.NegativeDouble, propertyName));
             }
         }
 
-        public static void ValidateIfPilotIsNotNull(IPilot pilot)
+        internal static void ValidateString(string value, string propertyName)
         {
-            if (pilot == null)
+            if (string.IsNullOrEmpty(value))
             {
-                throw new ArgumentNullException(NullPilotMessage);
+                throw new ArgumentNullException(string.Format(GlobalErrorMessages.NullOrEmptyString, propertyName));
             }
         }
 
-        public static void ValidateIfMachineIsNotNull(IMachine machine)
+        internal static void ValidateObject(object objectToValidate, string propertyName)
         {
-            if (machine == null)
+            if (objectToValidate == null)
             {
-                throw new ArgumentNullException(NullMachineMessage);
+                throw new ArgumentNullException(string.Format(GlobalErrorMessages.NullObject, propertyName));
             }
         }
     }

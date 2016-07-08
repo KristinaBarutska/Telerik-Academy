@@ -1,60 +1,50 @@
 ﻿namespace WarMachines.Machines
 {
-    using System.Collections.Generic;
     using System.Text;
 
-    using Interfaces;
+    using WarMachines.Interfaces;
 
-    public class Tank : Machine, ITank
+    internal class Tank : Machine, ITank
     {
         private const double InitialHealthPoints = 100;
         private const double BonusDefensePointsInDefenseMode = 30;
-        private const double AttackPointsToLoseInDefenseMode = 40;
+        private const double AttackPointsLostInDefenseMode = 40;
+        private const string DefenseModeFormatString = " *Defense: {0}";
 
-        private bool defenseMode;
-
-        public Tank(string name, double attackPoints, double defensePoints)
-            : base(name, attackPoints, defensePoints, InitialHealthPoints)
+        internal Tank(string name, double attackPoints, double defensePoints)
+            : base(name, attackPoints, defensePoints)
         {
+            this.HealthPoints = InitialHealthPoints;
             this.ToggleDefenseMode();
         }
 
         public bool DefenseMode
         {
-            get
-            {
-                return this.defenseMode;
-            }
-
-            private set
-            {
-                this.defenseMode = value;
-            }
+            get; private set;
         }
 
         public void ToggleDefenseMode()
         {
-            if (this.DefenseMode)
-            {
-                this.DefenseMode = false;
-                this.DefensePoints -= BonusDefensePointsInDefenseMode;
-                this.AttackPoints += AttackPointsToLoseInDefenseMode;
-            }
-            else
+            if (!this.DefenseMode)
             {
                 this.DefenseMode = true;
                 this.DefensePoints += BonusDefensePointsInDefenseMode;
-                this.AttackPoints -= AttackPointsToLoseInDefenseMode;
+                this.AttackPoints -= AttackPointsLostInDefenseMode;
+            }
+            else
+            {
+                this.DefenseMode = false;
+                this.DefensePoints -= BonusDefensePointsInDefenseMode;
+                this.AttackPoints += AttackPointsLostInDefenseMode;
             }
         }
 
         public override string ToString()
         {
             var result = new StringBuilder(base.ToString());
-            string defenseModeString = this.DefenseMode ? "ON" : "OFF";
 
-            result.AppendLine(string.Format(" *Defense: {0}", defenseModeString));
-
+            result.AppendLine(string.Format(DefenseModeFormatString,
+                this.DefenseMode ? MachineSpecialAbilityOn : MachineSpecialAbilityOff));
             return result.ToString();
         }
     }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\GlobalErrorMessages.cs" />
     <Compile Include="Common\Validator.cs" />
     <Compile Include="Engine\WarMachineEngine.cs" />
     <Compile Include="Engine\Command.cs" />

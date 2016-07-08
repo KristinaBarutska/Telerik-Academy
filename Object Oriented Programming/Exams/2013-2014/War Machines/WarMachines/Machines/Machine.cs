@@ -6,8 +6,25 @@
     using Common;
     using Interfaces;
 
-    public abstract class Machine : IMachine
+    internal abstract class Machine : IMachine
     {
+        private const string MachineAttackPoints = "Machine attack points";
+        private const string MachineDefensePoints = "Machine defense points";
+        private const string MachineHealthPoints = "Machine health points";
+        private const string MachineName = "Machine name";
+        private const string MachinePilot = "Machine pilot";
+        private const string MachineTargets = "Machine targets";
+        private const string MachineNameFormatString = "- {0}";
+        private const string MachineTypeFormatString = " *Type: {0}";
+        private const string MachineHealthFormatString = " *Health: {0}";
+        private const string MachineAttackFormatString = " *Attack: {0}";
+        private const string MachineDefenseFormatString = " *Defense: {0}";
+        private const string MachineTargetsFormatString = " *Targets: {0}";
+        private const string TargetsSeparator = ", ";
+        private const string NoneTargets = "None";
+        protected const string MachineSpecialAbilityOn = "ON";
+        protected const string MachineSpecialAbilityOff = "OFF";
+
         private double attackPoints;
         private double defensePoints;
         private double healthPoints;
@@ -15,13 +32,12 @@
         private IPilot pilot;
         private IList<string> targets;
 
-        public Machine(string name, double attackPoints, double defensePoints, double healthPoints)
+        internal Machine(string name, double attackPoints, double defensePoints)
         {
-            this.Name = name;
-            this.AttackPoints = attackPoints;
-            this.DefensePoints = defensePoints;
-            this.HealthPoints = healthPoints;
-            this.Targets = new List<string>();
+            this.name = name;
+            this.attackPoints = attackPoints;
+            this.defensePoints = defensePoints;
+            this.targets = new List<string>();
         }
 
         public double AttackPoints
@@ -33,7 +49,7 @@
 
             protected set
             {
-                Validator.ValidateIfDoubleNumberIsPositive(value, "Attack points");
+                Validator.ValidateDouble(value, MachineAttackPoints);
                 this.attackPoints = value;
             }
         }
@@ -47,7 +63,7 @@
 
             protected set
             {
-                Validator.ValidateIfDoubleNumberIsPositive(value, "Defense points");
+                Validator.ValidateDouble(value, MachineDefensePoints);
                 this.defensePoints = value;
             }
         }
@@ -61,7 +77,7 @@
 
             set
             {
-                Validator.ValidateIfDoubleNumberIsPositive(value, "Health poinst");
+                Validator.ValidateDouble(value, MachineHealthPoints);
                 this.healthPoints = value;
             }
         }
@@ -75,7 +91,7 @@
 
             set
             {
-                Validator.ValidateIfStirngIsNullOrEmpty(value, "Machine name");
+                Validator.ValidateString(value, MachineName);
                 this.name = value;
             }
         }
@@ -89,7 +105,7 @@
 
             set
             {
-                Validator.ValidateIfPilotIsNotNull(value);
+                Validator.ValidateObject(value, MachinePilot);
                 this.pilot = value;
             }
         }
@@ -103,29 +119,29 @@
 
             private set
             {
+                Validator.ValidateObject(value, MachineTargets);
                 this.targets = value;
             }
         }
 
         public void Attack(string target)
         {
-            Validator.ValidateIfStirngIsNullOrEmpty(target, "Target");
             this.Targets.Add(target);
         }
 
         public override string ToString()
         {
             var result = new StringBuilder();
-            string targetsString = this.Targets.Count == 0 ? "None" : string.Join(", ", this.Targets);
 
-            result.AppendLine(string.Format("- {0}", this.Name));
-            result.AppendLine(string.Format(" *Type: {0}", this.GetType().Name));
-            result.AppendLine(string.Format(" *Health: {0}", this.HealthPoints));
-            result.AppendLine(string.Format(" *Attack: {0}", this.AttackPoints));
-            result.AppendLine(string.Format(" *Defense: {0}", this.DefensePoints));
-            result.AppendLine(string.Format(" *Targets: {0}", targetsString));
+            result.AppendLine(string.Format(MachineNameFormatString, this.Name));
+            result.AppendLine(string.Format(MachineTypeFormatString, this.GetType().Name));
+            result.AppendLine(string.Format(MachineHealthFormatString, this.HealthPoints));
+            result.AppendLine(string.Format(MachineAttackFormatString, this.AttackPoints));
+            result.AppendLine(string.Format(MachineDefenseFormatString, this.DefensePoints));
+            result.AppendLine(string.Format(MachineTargetsFormatString,
+                this.Targets.Count == 0 ? NoneTargets : string.Join(TargetsSeparator, this.Targets)));
 
-            return result.ToString().Trim();
+            return result.ToString();
         }
     }
 }
