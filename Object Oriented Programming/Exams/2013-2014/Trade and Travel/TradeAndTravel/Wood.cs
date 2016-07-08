@@ -1,24 +1,21 @@
 ﻿namespace TradeAndTravel
 {
-    public class Wood : Item
+    internal class Wood : Item
     {
-        private const int GeneralWoodValue = 2;
+        private const int MoneyValue = 2;
+        private const string DropInteraction = "drop";
 
         public Wood(string name, Location location = null)
-            : base(name, Wood.GeneralWoodValue, ItemType.Wood, location)
+            : base(name, Wood.MoneyValue, ItemType.Wood, location)
         {
         }
 
         public override void UpdateWithInteraction(string interaction)
         {
-            base.UpdateWithInteraction(interaction);
-
-            if (interaction == "drop")
+            if (interaction == DropInteraction && this.Value > 0)
             {
                 this.Value--;
             }
-
-            this.Value = this.Value < 0 ? 0 : this.Value;
         }
     }
 }

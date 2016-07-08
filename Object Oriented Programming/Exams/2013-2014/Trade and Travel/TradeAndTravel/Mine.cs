@@ -1,10 +1,17 @@
 ﻿namespace TradeAndTravel
 {
-    public class Mine : GatheringLocation
+    internal class Mine : GatheringLocation
     {
-        public Mine(string name)
-            : base(name, ItemType.Iron, ItemType.Armor, LocationType.Mine)
+        public Mine(string name) 
+            : base(name, LocationType.Mine)
         {
+            this.GatheredType = ItemType.Iron;
+            this.RequiredItem = ItemType.Armor;
+        }
+
+        public override Item ProduceItem(string name)
+        {
+            return new Iron(name, this);
         }
     }
 }

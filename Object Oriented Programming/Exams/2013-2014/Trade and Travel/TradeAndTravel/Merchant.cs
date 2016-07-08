@@ -1,8 +1,10 @@
-﻿namespace TradeAndTravel
+﻿using System;
+
+namespace TradeAndTravel
 {
-    public class Merchant : Shopkeeper, ITraveller
+    internal class Merchant : Shopkeeper, ITraveller
     {
-        public Merchant(string name, Location location) 
+        public Merchant(string name, Location location)
             : base(name, location)
         {
         }

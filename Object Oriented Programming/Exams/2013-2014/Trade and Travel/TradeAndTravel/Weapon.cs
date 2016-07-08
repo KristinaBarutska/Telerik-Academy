@@ -1,11 +1,11 @@
 ﻿namespace TradeAndTravel
 {
-    public class Weapon : Item
+    internal class Weapon : Item
     {
-        private const int GeneralWeaponValue = 10;
+        private const int MoneyValue = 10;
 
         public Weapon(string name, Location location = null)
-            : base(name, Weapon.GeneralWeaponValue, ItemType.Weapon, location)
+            : base(name, Weapon.MoneyValue, ItemType.Weapon, location)
         {
         }
     }

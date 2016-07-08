@@ -1,0 +1,6 @@
+C:\Users\belch\Desktop\OOP\Trade and Travel\TradeAndTravel-Skeleton\TradeAndTravel\bin\Debug\TradeAndTravel.exe.config
+C:\Users\belch\Desktop\OOP\Trade and Travel\TradeAndTravel-Skeleton\TradeAndTravel\bin\Debug\TradeAndTravel.exe
+C:\Users\belch\Desktop\OOP\Trade and Travel\TradeAndTravel-Skeleton\TradeAndTravel\bin\Debug\TradeAndTravel.pdb
+C:\Users\belch\Desktop\OOP\Trade and Travel\TradeAndTravel-Skeleton\TradeAndTravel\obj\Debug\TradeAndTravel.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\OOP\Trade and Travel\TradeAndTravel-Skeleton\TradeAndTravel\obj\Debug\TradeAndTravel.exe
+C:\Users\belch\Desktop\OOP\Trade and Travel\TradeAndTravel-Skeleton\TradeAndTravel\obj\Debug\TradeAndTravel.pdb
