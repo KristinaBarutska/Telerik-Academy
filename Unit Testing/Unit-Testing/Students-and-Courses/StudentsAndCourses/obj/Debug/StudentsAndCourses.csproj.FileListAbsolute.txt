@@ -1,0 +1,10 @@
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\UnitTesting\StudentsAndCourses\bin\Debug\StudentsAndCourses.dll
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\UnitTesting\StudentsAndCourses\bin\Debug\StudentsAndCourses.pdb
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\UnitTesting\StudentsAndCourses\obj\Debug\StudentsAndCourses.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\UnitTesting\StudentsAndCourses\obj\Debug\StudentsAndCourses.dll
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\UnitTesting\StudentsAndCourses\obj\Debug\StudentsAndCourses.pdb
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Homeworks\UnitTesting\StudentsAndCourses\bin\Debug\StudentsAndCourses.dll
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Homeworks\UnitTesting\StudentsAndCourses\bin\Debug\StudentsAndCourses.pdb
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Homeworks\UnitTesting\StudentsAndCourses\obj\Debug\StudentsAndCourses.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Homeworks\UnitTesting\StudentsAndCourses\obj\Debug\StudentsAndCourses.dll
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Homeworks\UnitTesting\StudentsAndCourses\obj\Debug\StudentsAndCourses.pdb
