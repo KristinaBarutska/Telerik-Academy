@@ -1,0 +1,12 @@
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\TDD\obj\Debug\Poker.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\TDD\bin\Debug\Poker.exe
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\TDD\bin\Debug\Poker.pdb
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\TDD\obj\Debug\Poker.exe
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\TDD\obj\Debug\Poker.pdb
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Test-Driven-Development\TDD\obj\Debug\Poker.exe
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Test-Driven-Development\TDD\obj\Debug\Poker.pdb
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Test-Driven-Development\TDD\bin\Debug\Poker.exe
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Test-Driven-Development\TDD\bin\Debug\Poker.pdb
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Test-Driven-Development\TDD\obj\Debug\Poker.csprojResolveAssemblyReference.cache
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Homeworks\Test-Driven-Development\TDD\obj\Debug\Poker.exe
+C:\Users\belch\Desktop\Stuff\HQC\Unit-Testing-Course\Homeworks\Test-Driven-Development\TDD\obj\Debug\Poker.pdb
