@@ -88,7 +88,7 @@ function solve() {
                         if (typeof matrix[row - 1][col] === 'string') {
                             $('<td />').text(matrix[row - 1][col]).addClass('another-month').appendTo($currentRow);
                         } else {
-                            $('<td />').text(matrix[row - 1][col]).appendTo($currentRow);
+                            $('<td />').text(matrix[row - 1][col]).addClass('current-month').appendTo($currentRow);
                         }
                     }
                 }
@@ -111,7 +111,7 @@ function solve() {
                 .appendTo($picker);
         }
 
-        $root.on('click', '#date', function () {
+        $root.on('click', '.datepicker', function () {
             var pickerCalendar = $picker.find('.calendar');
 
             if (!pickerCalendar.length) {
@@ -135,7 +135,7 @@ function solve() {
             $header.find('.current-month').text(MONTH_NAMES[date.getMonth()] + ' ' + date.getFullYear());
         });
 
-        $picker.on('click', 'td', function () {
+        $picker.on('click', '.current-month', function () {
             var day = $(this).text();
             var month = date.getMonth() + 1;
             var year = date.getFullYear();
@@ -144,7 +144,7 @@ function solve() {
             $root.find('#date').val(day + '/' + month + '/' + year);
         });
 
-        $picker.on('click', '.current-date', function () {
+        $picker.on('click', '.current-date-link', function () {
             var day = currentDate.getDate();
             var month = currentDate.getMonth() + 1;
             var year = currentDate.getFullYear();
@@ -158,6 +158,19 @@ function solve() {
             $picker.toggleClass('picker-visible');
         }
 
+        $(document).on('click', function (event) {
+            var $target = $(event.target);
+
+            if (!$target.hasClass('datepicker') && !$target.hasClass('controls') &&
+                !$target.hasClass('picker') && !$target.hasClass('current-month') && 
+                !$target.hasClass('another-month') && !$target.hasClass('current-date') && 
+                !$target.hasClass('next-month') && !$target.hasClass('previous-month')) {
+                $picker.removeClass('picker-visible');
+            }
+        });
+
         $root.append($picker);
+
+        return $(this);
     };
 }
