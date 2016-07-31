@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7F2C6D03-9C13-4A9C-A101-E994D3326E50}</ProjectGuid>
+    <ProjectGuid>{3D9CD5A2-BBC6-4861-AD8E-354B7CDECA00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArmyOfCreatures.Tests</RootNamespace>
-    <AssemblyName>ArmyOfCreatures.Tests</AssemblyName>
+    <RootNamespace>ArmyOfCreatures.Console.Tests</RootNamespace>
+    <AssemblyName>ArmyOfCreatures.Console.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -62,19 +62,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AddAttackWhenSkipTests.cs" />
-    <Compile Include="AddDefenseWhenSkipTests.cs" />
-    <Compile Include="BattleManagerTests.cs" />
-    <Compile Include="CreatureIdentifierTests.cs" />
-    <Compile Include="CreaturesFactoryTests.cs" />
-    <Compile Include="CreaturesInBattleTests.cs" />
-    <Compile Include="DoubleAttackWhenAttackingTests.cs" />
-    <Compile Include="DoubleDamageTests.cs" />
-    <Compile Include="DoubleDefenseWhenDefendingTests.cs" />
-    <Compile Include="HateTests.cs" />
+    <Compile Include="AddCommandTests.cs" />
+    <Compile Include="AttackCommandTests.cs" />
+    <Compile Include="CommandManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReduceEnemyDefenseTests.cs" />
-    <Compile Include="RessurectionTests.cs" />
+    <Compile Include="SkipCommandTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -85,7 +77,6 @@
       <Name>ArmyOfCreatures</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
