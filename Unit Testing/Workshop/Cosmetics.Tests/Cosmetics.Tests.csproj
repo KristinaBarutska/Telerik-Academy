@@ -52,10 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandTests.cs" />
     <Compile Include="CosmeticsEngineTests.cs" />
     <Compile Include="CosmeticsFactoryTests.cs" />
     <Compile Include="Mocks\MockedCosmeticsEngine.cs" />
+    <Compile Include="PrintMethodsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cosmetics\Cosmetics.csproj">

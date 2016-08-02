@@ -8,6 +8,7 @@
     using Common;
     using Contracts;
     using System.Collections.Generic;
+
     [TestFixture]
     public class CosmeticsFactoryTests
     {
