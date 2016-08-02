@@ -146,9 +146,10 @@
         public void Start_RemoveFromShoppingCart_ShouldRemoveSelectedProductFromTheShoppingCart()
         {
             MockedCosmeticsEngine engine = new MockedCosmeticsEngine(mockedFactory.Object, mockedShoppingCart.Object);
-
+            
             Console.SetIn(new StringReader("CreateToothpaste White+ Colgate 15.50 men fluor,bqla,golqma" +
                 Environment.NewLine + "AddToShoppingCart White+" + Environment.NewLine + "RemoveFromShoppingCart White+"));
+            engine.Start();
 
             Assert.AreEqual(0, this.shoppingCartProducts.Count);
         }

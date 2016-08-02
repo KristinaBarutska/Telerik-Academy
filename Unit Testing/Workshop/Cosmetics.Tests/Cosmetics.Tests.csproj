@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CosmeticsEngineTests.cs" />
+    <Compile Include="CosmeticsFactoryTests.cs" />
     <Compile Include="Mocks\MockedCosmeticsEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
