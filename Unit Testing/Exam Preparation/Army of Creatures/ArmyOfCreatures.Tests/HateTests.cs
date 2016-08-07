@@ -1,6 +1,7 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
 
     using NUnit.Framework;
     using Moq;
@@ -9,61 +10,68 @@
     using Logic.Battles;
     using Extended.Creatures;
 
+    [TestFixture]
     public class HateTests
     {
         [Test]
-        public void Constructor_NullCretureTypeToHate_ShouldThrowNewArgumentNullException()
+        public void Constructor_NullCreatureToHate_ShouldThrowArgumentNullException()
         {
             Assert.Throws<ArgumentNullException>(() => new Hate(null));
         }
 
         [Test]
-        public void ChangeDamageWhenAttacking_NullAttacker_ShouldThrowArgumentNullException()
+        public void Constructor_ValidCreatureToHate_ShouldSetCreatureToHateToThePassedValue()
         {
-            var hate = new Hate(typeof(Angel));
+            var specialty = new Hate(typeof(Angel));
+            var creatureToHate = (Type)typeof(Hate)
+                .GetField("creatureTypeToHate", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(specialty);
 
-            Assert.Throws<ArgumentNullException>(() => hate.ChangeDamageWhenAttacking(null, null, 0));
+            Assert.AreEqual(typeof(Angel), creatureToHate);
+        }
+
+        [Test]
+        public void ChangeDamageWhenAttacking_NullAttacker_ShouldThrowArgumentNullEception()
+        {
+            var specialty = new Hate(typeof(Angel));
+            var defender = new Mock<ICreaturesInBattle>();
+
+            Assert.Throws<ArgumentNullException>(() => specialty.ChangeDamageWhenAttacking(null, defender.Object, 1));
         }
 
         [Test]
         public void ChangeDamageWhenAttacking_NullDefender_ShouldThrowArgumentNullException()
         {
-            var hate = new Hate(typeof(Angel));
-            var mockedAttacker = new Mock<ICreaturesInBattle>();
+            var specialty = new Hate(typeof(Angel));
+            var attacker = new Mock<ICreaturesInBattle>();
 
-            Assert.Throws<ArgumentNullException>(() => hate.ChangeDamageWhenAttacking(mockedAttacker.Object, null, 0));
+            Assert.Throws<ArgumentNullException>(() => specialty.ChangeDamageWhenAttacking(attacker.Object, null, 1));
         }
 
         [Test]
-        public void ChangeDamageWhenAttacking_DefenderWithTheSameTypeOfCreatureToHate_ReturnDamageMultiplied()
+        public void ChangeDamageWhenAttacking_ValidParameters_DefenderAndCreatureToHateWithSameType_ReturnDamageMultiplied1point5()
         {
-            var hate = new Hate(typeof(Angel));
-            var mockedAttacker = new Mock<ICreaturesInBattle>();
-            var mockedDefender = new Mock<ICreaturesInBattle>();
-            decimal currentDamage = 10;
+            var specialty = new Hate(typeof(Angel));
+            var attacker = new Mock<ICreaturesInBattle>();
+            var defender = new Mock<ICreaturesInBattle>();
 
-            mockedDefender.SetupGet(d => d.Creature).Returns(new Angel());
+            defender.SetupGet(d => d.Creature).Returns(new Angel());
+            decimal newDamage = specialty.ChangeDamageWhenAttacking(attacker.Object, defender.Object, 10);
 
-            decimal expected = 15;
-            decimal actual = hate.ChangeDamageWhenAttacking(mockedAttacker.Object, mockedDefender.Object, currentDamage);
-
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(15, newDamage);
         }
 
         [Test]
-        public void ChangeDamageWhenAttacking_DefenderWithDifferentTypeOfCreatureToHate_ReturnCurrentDamage()
+        public void ChangeDamageWhenAttacking_ValidParameters_DefenderAndCreatureToHateWithDifferentTypes_ReturnCurrentDamage()
         {
-            var hate = new Hate(typeof(Angel));
-            var mockedAttacker = new Mock<ICreaturesInBattle>();
-            var mockedDefender = new Mock<ICreaturesInBattle>();
-            decimal currentDamage = 10;
+            var specialty = new Hate(typeof(Angel));
+            var attacker = new Mock<ICreaturesInBattle>();
+            var defender = new Mock<ICreaturesInBattle>();
 
-            mockedDefender.SetupGet(d => d.Creature).Returns(new Goblin());
+            defender.SetupGet(d => d.Creature).Returns(new Goblin());
+            var damage = specialty.ChangeDamageWhenAttacking(attacker.Object, defender.Object, 10);
 
-            decimal expected = currentDamage;
-            decimal actual = hate.ChangeDamageWhenAttacking(mockedAttacker.Object, mockedDefender.Object, currentDamage);
-
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(10, damage);
         }
 
         [Test]

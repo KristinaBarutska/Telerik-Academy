@@ -1,51 +1,103 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
 
     using NUnit.Framework;
     using Logic.Specialties;
-    using Logic.Battles;
     using Moq;
+    using Logic.Battles;
+
     [TestFixture]
     public class DoubleDefenseWhenDefendingTests
     {
-        [Test]
-        public void Constructor_InvalidRounds_ShouldThrowArgumentOutOfRangeException()
+        [TestCase(0)]
+        [TestCase(-1)]
+        public void Constructor_InvalidRounds_ShouldThrowArgumentOutOfRangeException(int rounds)
         {
-            Assert.Throws(typeof(ArgumentOutOfRangeException), () => new DoubleDefenseWhenDefending(0));
+            Assert.Throws<ArgumentOutOfRangeException>(() => new DoubleDefenseWhenDefending(rounds));
+        }
+
+        [Test]
+        public void Constructor_ValidRounds_ShouldSetThisRoundsToThePassedValue()
+        {
+            var specialty = new DoubleDefenseWhenDefending(10);
+            var rounds = (int)typeof(DoubleDefenseWhenDefending)
+                .GetField("rounds", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(specialty);
+
+            Assert.AreEqual(10, rounds);
         }
 
         [Test]
         public void ApplyWhenDefending_NullDefender_ShouldThrowArgumentNullException()
         {
-            var doubleDefenseWhenDefending = new DoubleDefenseWhenDefending(1);
+            var specialty = new DoubleDefenseWhenDefending(10);
+            var attacker = new Mock<ICreaturesInBattle>();
 
-            Assert.Throws(typeof(ArgumentNullException), () => doubleDefenseWhenDefending.ApplyWhenDefending(null, null));
+            Assert.Throws<ArgumentNullException>(() => specialty.ApplyWhenDefending(null, attacker.Object));
         }
 
         [Test]
         public void ApplyWhenDefending_NullAttacker_ShouldThrowArgumentNullException()
         {
-            var doubleDefenseWhenDefending = new DoubleDefenseWhenDefending(1);
-            var mockedDefender = new Mock<ICreaturesInBattle>().Object;
+            var specialty = new DoubleDefenseWhenDefending(10);
+            var defender = new Mock<ICreaturesInBattle>();
 
-            Assert.Throws(typeof(ArgumentNullException), () => doubleDefenseWhenDefending.ApplyWhenDefending(mockedDefender, null));
+            Assert.Throws<ArgumentNullException>(() => specialty.ApplyWhenDefending(defender.Object, null));
         }
 
         [Test]
-        public void ApplyWhenDefending_ValidAttackerAndDefender_ShouldDoubleDefendersCurrentDefense()
+        public void ApplyWhenDefending_ZeroOrLessRounds_ShouldNotModifyDefendersCurrentDefense()
         {
-            var doubleDefenseWhenDefending = new DoubleDefenseWhenDefending(1);
-            var mockedAttacker = new Mock<ICreaturesInBattle>().Object;
-            var mockedDefender = new Mock<ICreaturesInBattle>();
-            int mockedDefenderCurrentDefense = 2;
+            var specialty = new DoubleDefenseWhenDefending(10);
+            var defender = new Mock<ICreaturesInBattle>();
+            int currentDefense = 10;
 
-            mockedDefender.SetupGet(d => d.CurrentDefense).Returns(mockedDefenderCurrentDefense);
-            mockedDefender.SetupSet(d => d.CurrentDefense = It.IsAny<int>())
-                .Callback<int>(v => mockedDefenderCurrentDefense = v);
+            defender.SetupGet(d => d.CurrentDefense).Returns(currentDefense);
+            defender.SetupSet(d => d.CurrentDefense = It.IsAny<int>()).Callback<int>(v => currentDefense = v);
 
-            doubleDefenseWhenDefending.ApplyWhenDefending(mockedDefender.Object, mockedAttacker);
-            Assert.AreEqual(4, mockedDefenderCurrentDefense);
+            var attacker = new Mock<ICreaturesInBattle>();
+
+            typeof(DoubleDefenseWhenDefending)
+                .GetField("rounds", BindingFlags.NonPublic | BindingFlags.Instance)
+                .SetValue(specialty, -1);
+            specialty.ApplyWhenDefending(defender.Object, attacker.Object);
+            Assert.AreEqual(10, currentDefense);
+        }
+
+        [Test]
+        public void ApplyWhenDefending_ValidDefenderAndAttacker_DefenderCurrentDefenseShouldBeDoubled()
+        {
+            var specialty = new DoubleDefenseWhenDefending(10);
+            var defender = new Mock<ICreaturesInBattle>();
+            var attacker = new Mock<ICreaturesInBattle>();
+            int currentDefense = 10;
+
+            defender.SetupGet(d => d.CurrentDefense).Returns(currentDefense);
+            defender.SetupSet(d => d.CurrentDefense = It.IsAny<int>()).Callback<int>(v => currentDefense = v);
+            specialty.ApplyWhenDefending(defender.Object, attacker.Object);
+
+            Assert.AreEqual(20, currentDefense);
+        }
+
+        [Test]
+        public void ApplyWhenDefending_WhenTheMethodIsExecutedProperlyThisRoundsShouldBeDecreasedByOne()
+        {
+            var specialty = new DoubleDefenseWhenDefending(10);
+            var defender = new Mock<ICreaturesInBattle>();
+            var attacker = new Mock<ICreaturesInBattle>();
+            int currentDefense = 10;
+
+            defender.SetupGet(d => d.CurrentDefense).Returns(currentDefense);
+            defender.SetupSet(d => d.CurrentDefense = It.IsAny<int>()).Callback<int>(v => currentDefense = v);
+            specialty.ApplyWhenDefending(defender.Object, attacker.Object);
+
+            int rounds = (int)typeof(DoubleDefenseWhenDefending)
+                .GetField("rounds", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(specialty);
+
+            Assert.AreEqual(9, rounds);
         }
 
         [Test]

@@ -1,78 +1,46 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
 
     using NUnit.Framework;
-    using Logic.Battles;
     using Logic.Creatures;
+    using Logic.Battles;
     using Extended.Creatures;
 
     [TestFixture]
     public class CreaturesInBattleTests
     {
         [Test]
-        public void Constructor_PassValidCreatureAndCount_ShouldSetCreatureToThisCreature()
+        public void Constructor_ValidCreatureAndCount_ShouldInitializeAllProperties()
         {
             var creature = new Angel();
             var creaturesInBattle = new CreaturesInBattle(creature, 1);
 
-            Assert.AreEqual(creature, creaturesInBattle.Creature);
+            Assert.IsTrue(
+                creaturesInBattle.Creature == creature &&
+                creaturesInBattle.PermanentAttack == creature.Attack &&
+                creaturesInBattle.PermanentDefense == creature.Defense &&
+                creaturesInBattle.TotalHitPoints == creature.HealthPoints);
         }
 
         [Test]
-        public void Constructor_PassValidCreatureAndCount_ShouldSetCreatureAttackToPermanentAttack()
+        public void TotalHitPoints_IfLessThan0ShouldReturn0()
         {
             var creature = new Angel();
             var creaturesInBattle = new CreaturesInBattle(creature, 1);
 
-            Assert.AreEqual(creature.Attack, creaturesInBattle.PermanentAttack);
-        }
-
-        [Test]
-        public void Constructor_PassValidCreatureAndCount_ShouldSetCreatureDefenseToPermanentDefense()
-        {
-            var creature = new Angel();
-            var creaturesInBattle = new CreaturesInBattle(creature, 1);
-
-            Assert.AreEqual(creature.Defense, creaturesInBattle.PermanentDefense);
-        }
-
-        [Test]
-        public void Constructor_PassValidCreatureAndCount_ShouldSetCreatureHealthPointsMultipliedByCounterToTotalHitPoints()
-        {
-            var creature = new Angel();
-            var creaturesInBattle = new CreaturesInBattle(creature, 2);
-
-            Assert.AreEqual(creature.HealthPoints * 2, creaturesInBattle.TotalHitPoints);
-        }
-
-        [Test]
-        public void TotalHitPoints_SetNegativeValue_GetShouldReturnZero()
-        {
-            var creature = new Angel();
-            var creaturesInBattle = new CreaturesInBattle(creature, 2);
-
-            creaturesInBattle.TotalHitPoints = -100;
-
+            creaturesInBattle.TotalHitPoints = -10;
             Assert.AreEqual(0, creaturesInBattle.TotalHitPoints);
         }
 
         [Test]
-        public void Count_ValidTotalHitPoints_ShouldReturn1For1Creature()
+        public void Count_IfLessThan0ShouldReturn0()
         {
             var creature = new Angel();
             var creaturesInBattle = new CreaturesInBattle(creature, 1);
 
-            Assert.AreEqual(1, creaturesInBattle.Count);
-        }
-
-        [Test]
-        public void Count_TotalHitPointsLessThanCreatureHealthPoints_ShouldReturn0()
-        {
-            var creature = new Angel();
-            var creaturesInBattle = new CreaturesInBattle(creature, 1);
-
-            creaturesInBattle.TotalHitPoints = -1;
+            creaturesInBattle.TotalHitPoints = 0;
             Assert.AreEqual(0, creaturesInBattle.Count);
         }
 
@@ -82,51 +50,66 @@
             var creature = new Angel();
             var creaturesInBattle = new CreaturesInBattle(creature, 1);
 
-            Assert.Throws(typeof(ArgumentNullException), () => creaturesInBattle.DealDamage(null));
+            Assert.Throws<ArgumentNullException>(() => creaturesInBattle.DealDamage(null));
         }
 
         [Test]
-        public void DealDamage_ValidDefender_ShouldDecreaseDefendersTotalHitPoints()
-        {
-            var attacker = new Angel();
-            var defender = new Goblin();
-            var creaturesInBattleAttacker = new CreaturesInBattle(attacker, 1);
-            var creaturesInBattleDefender = new CreaturesInBattle(defender, 1);
-            int oldTotalHitPoints = creaturesInBattleDefender.TotalHitPoints;
-
-            creaturesInBattleAttacker.DealDamage(creaturesInBattleDefender);
-            Assert.IsTrue(oldTotalHitPoints > creaturesInBattleDefender.TotalHitPoints);
-        }
-
-        [Test]
-        public void Skip_ShouldAdd3PointsToPermanentDefense()
+        public void DealDamage_ValidDefender_DefendersTotalHitPointsShouldBeReduced()
         {
             var creature = new Angel();
             var creaturesInBattle = new CreaturesInBattle(creature, 1);
-            int oldPermanentDefense = creaturesInBattle.PermanentDefense;
+            var defenderCreature = new Goblin();
+            var defender = new CreaturesInBattle(defenderCreature, 1);
+            var notModifiedDefendersHitPoints = defender.TotalHitPoints;
+
+            creaturesInBattle.DealDamage(defender);
+            Assert.IsTrue(defender.TotalHitPoints < notModifiedDefendersHitPoints);
+        }
+
+        [Test]
+        public void Skip_ShouldIncreasePermanentDefenseBy3()
+        {
+            var creature = new Angel();
+            var creaturesInBattle = new CreaturesInBattle(creature, 1);
+            var notModifiedPermanentDefense = creaturesInBattle.PermanentDefense;
 
             creaturesInBattle.Skip();
-            Assert.IsTrue(creaturesInBattle.PermanentDefense - oldPermanentDefense == 3);
+            Assert.AreEqual(notModifiedPermanentDefense + 3, creaturesInBattle.PermanentDefense);
         }
 
         [Test]
-        public void StartNewTurn_ShouldSetPermanentAttackToCurrentAttack()
+        public void StartNewTurn_ShouldSetCurrentAttackToPermanentAttack()
         {
             var creature = new Angel();
             var creaturesInBattle = new CreaturesInBattle(creature, 1);
 
             creaturesInBattle.StartNewTurn();
-            Assert.AreEqual(creaturesInBattle.PermanentAttack, creaturesInBattle.CurrentAttack);
+            Assert.AreEqual(creaturesInBattle.CurrentAttack, creaturesInBattle.PermanentAttack);
         }
 
         [Test]
-        public void StartNewTurn_ShouldSetPermanentDefenseToCurrentDefense()
+        public void StartNewTurn_ShouldSetCurrentDefenseToPermanentDefense()
         {
             var creature = new Angel();
             var creaturesInBattle = new CreaturesInBattle(creature, 1);
 
             creaturesInBattle.StartNewTurn();
-            Assert.AreEqual(creaturesInBattle.PermanentDefense, creaturesInBattle.CurrentDefense);
+            Assert.AreEqual(creaturesInBattle.CurrentDefense, creaturesInBattle.PermanentDefense);
+        }
+
+        [Test]
+        public void StartNewTurn_ShouldSetLastDamageTo0()
+        {
+            var creature = new Angel();
+            var creaturesInBattle = new CreaturesInBattle(creature, 1);
+
+            creaturesInBattle.StartNewTurn();
+
+            var lastDamage = (decimal)typeof(CreaturesInBattle)
+                .GetField("lastDamage", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(creaturesInBattle);
+
+            Assert.AreEqual(0, lastDamage);
         }
 
         [Test]

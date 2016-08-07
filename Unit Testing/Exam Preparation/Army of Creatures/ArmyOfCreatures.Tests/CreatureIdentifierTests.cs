@@ -1,30 +1,33 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
 
     using NUnit.Framework;
     using Logic.Battles;
+    using Moq;
+    using Moq.Protected;
 
     [TestFixture]
     public class CreatureIdentifierTests
     {
         [Test]
-        public void CreatureIdentifierFromString_NullValueToParse_ShouldThrowArgumentNullException()
+        public void CreatureIdentifierFromString_NullString_ShouldThrowArgumentNullException()
         {
-            Assert.Throws(typeof(ArgumentNullException), () => CreatureIdentifier.CreatureIdentifierFromString(null));
+            Assert.Throws<ArgumentNullException>(() => CreatureIdentifier.CreatureIdentifierFromString(null));
         }
 
         [Test]
-        public void CreatureIdentifierFromString_ValidValueToParse_ShouldReturnNewCreatureIdentifier()
+        public void CreatureIdentifierFromString_ValidString_ShouldReturnNewIdentifier()
         {
-            Assert.IsTrue(CreatureIdentifier.CreatureIdentifierFromString("Goblin(1)").GetType().Name == "CreatureIdentifier");
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
+            Assert.IsTrue(identifier.CreatureType == "Angel" && identifier.ArmyNumber == 1);
         }
 
         [Test]
         public void ToString_ShouldReturnStringWithCreatureTypeAndArmyNumber()
         {
             var identifier = CreatureIdentifier.CreatureIdentifierFromString("Goblin(1)");
-
             Assert.AreEqual("Goblin(1)", identifier.ToString());
         }
     }

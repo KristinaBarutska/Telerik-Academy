@@ -1,11 +1,12 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
 
+    using Moq;
     using NUnit.Framework;
     using Extended.Specialties;
     using Logic.Battles;
-    using Moq;
 
     [TestFixture]
     public class AddAttackWhenSkipTests
@@ -18,24 +19,33 @@
         }
 
         [Test]
-        public void ApplyOnSkip_NullCreature_ShouldThrowArgumentNullException()
+        public void Constructor_ValidAttackToAdd_ShouldSetAttackToAddToThePassedValue()
         {
-            AddAttackWhenSkip addAttackWhenSkip = new AddAttackWhenSkip(5);
+            var specialty = new AddAttackWhenSkip(5);
+            var attackToAddField = (int)typeof(AddAttackWhenSkip)
+                .GetField("attackToAdd", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(specialty);
 
-            Assert.Throws<ArgumentNullException>(() => addAttackWhenSkip.ApplyOnSkip(null));
+            Assert.AreEqual(5, attackToAddField);
         }
 
         [Test]
-        public void ApplyOnSkip_ValidCreature_ShouldAddAttackToAddToCreaturePermanentAttack()
+        public void ApplyOnSkip_NullCreature_ShouldThrowArgumentNullException()
         {
-            AddAttackWhenSkip addAttackWhenSkip = new AddAttackWhenSkip(5);
-            Mock<ICreaturesInBattle> mockedCreature = new Mock<ICreaturesInBattle>();
+            Assert.Throws<ArgumentNullException>(() => new AddAttackWhenSkip(5).ApplyOnSkip(null));
+        }
+
+        [Test]
+        public void ApplyOnSKip_ValidCreature_CreaturePermanentAttackShouldBeIncreasedByAttackToAdd()
+        {
+            var specialty = new AddAttackWhenSkip(5);
+            var creature = new Mock<ICreaturesInBattle>();
             int permanentAttack = 10;
 
-            mockedCreature.SetupGet(c => c.PermanentAttack).Returns(permanentAttack);
-            mockedCreature.SetupSet(c => c.PermanentAttack = It.IsAny<int>()).Callback<int>(v => permanentAttack = v);
+            creature.SetupGet(c => c.PermanentAttack).Returns(permanentAttack);
+            creature.SetupSet(c => c.PermanentAttack = It.IsAny<int>()).Callback<int>(v => permanentAttack = v);
+            specialty.ApplyOnSkip(creature.Object);
 
-            addAttackWhenSkip.ApplyOnSkip(mockedCreature.Object);
             Assert.AreEqual(15, permanentAttack);
         }
 

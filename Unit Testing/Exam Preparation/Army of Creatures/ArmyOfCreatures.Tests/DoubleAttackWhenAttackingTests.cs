@@ -1,11 +1,12 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
 
     using NUnit.Framework;
+    using Moq;
     using Extended.Specialties;
     using Logic.Battles;
-    using Moq;
 
     [TestFixture]
     public class DoubleAttackWhenAttackingTests
@@ -13,46 +14,76 @@
         [Test]
         public void Constructor_InvalidRounds_ShouldThrowArgumentOutOfRangeException()
         {
-            Assert.Throws<ArgumentOutOfRangeException>(() => new DoubleAttackWhenAttacking(0));
+            Assert.Throws<ArgumentOutOfRangeException>(() => new DoubleAttackWhenAttacking(-100));
+        }
+
+        [Test]
+        public void Constructor_ValidRounds_ShouldSetThisRoundsToThePassedValue()
+        {
+            var specialty = new DoubleAttackWhenAttacking(5);
+            var roundsField = (int)typeof(DoubleAttackWhenAttacking)
+                .GetField("rounds", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(specialty);
+
+            Assert.AreEqual(5, roundsField);
         }
 
         [Test]
         public void ApplyWhenAttacking_NullAttacker_ShouldThrowArgumentNullException()
         {
-            DoubleAttackWhenAttacking specialty = new DoubleAttackWhenAttacking(3);
-            Mock<ICreaturesInBattle> mockedDefender = new Mock<ICreaturesInBattle>();
+            var specialty = new DoubleAttackWhenAttacking(5);
+            var defender = new Mock<ICreaturesInBattle>();
 
-            Assert.Throws<ArgumentNullException>(() => specialty.ApplyWhenAttacking(null, mockedDefender.Object));
+            Assert.Throws<ArgumentNullException>(() => specialty.ApplyWhenAttacking(null, defender.Object));
         }
 
         [Test]
         public void ApplyWhenAttacking_NullDefender_ShouldThrowArgumentNullException()
         {
-            DoubleAttackWhenAttacking specialty = new DoubleAttackWhenAttacking(3);
-            Mock<ICreaturesInBattle> mockedAttacker = new Mock<ICreaturesInBattle>();
+            var specialty = new DoubleAttackWhenAttacking(5);
+            var attacker = new Mock<ICreaturesInBattle>();
 
-            Assert.Throws<ArgumentNullException>(() => specialty.ApplyWhenAttacking(null, mockedAttacker.Object));
+            Assert.Throws<ArgumentNullException>(() => specialty.ApplyWhenAttacking(attacker.Object, null));
         }
 
         [Test]
-        public void ApplyWhenAttacking_ValidParameters_ShouldDoubleTheAttackersCurrentAttack()
+        public void ApplyWhenAttacking_WhenRoundsAreLessThan0JustReturnAndDoesNotModifyDefender()
         {
-            DoubleAttackWhenAttacking specialty = new DoubleAttackWhenAttacking(3);
-            Mock<ICreaturesInBattle> mockedDefender = new Mock<ICreaturesInBattle>();
-            Mock<ICreaturesInBattle> mockedAttacker = new Mock<ICreaturesInBattle>();
+            var specialty = new DoubleAttackWhenAttacking(5);
+            var attacker = new Mock<ICreaturesInBattle>();
+            var defender = new Mock<ICreaturesInBattle>();
             int attackerCurrentAttack = 10;
 
-            mockedAttacker.SetupGet(a => a.CurrentAttack).Returns(attackerCurrentAttack);
-            mockedAttacker.SetupSet(a => a.CurrentAttack = It.IsAny<int>()).Callback<int>(v => attackerCurrentAttack = v);
+            attacker.SetupGet(a => a.CurrentAttack).Returns(attackerCurrentAttack);
+            attacker.SetupSet(a => a.CurrentAttack = It.IsAny<int>()).Callback<int>(v => attackerCurrentAttack = v);
 
-            specialty.ApplyWhenAttacking(mockedAttacker.Object, mockedDefender.Object);
+            typeof(DoubleAttackWhenAttacking)
+                .GetField("rounds", BindingFlags.NonPublic | BindingFlags.Instance)
+                .SetValue(specialty, -1);
+
+            Assert.AreEqual(10, attackerCurrentAttack);
+        }
+
+
+        [Test]
+        public void ApplyWhenAttacking_ValidParameters_AttackersCurretnAttackShouldBeDoubled()
+        {
+            var specialty = new DoubleAttackWhenAttacking(5);
+            var attacker = new Mock<ICreaturesInBattle>();
+            var defender = new Mock<ICreaturesInBattle>();
+            int attackerCurrentAttack = 10;
+
+            attacker.SetupGet(a => a.CurrentAttack).Returns(attackerCurrentAttack);
+            attacker.SetupSet(a => a.CurrentAttack = It.IsAny<int>()).Callback<int>(v => attackerCurrentAttack = v);
+            specialty.ApplyWhenAttacking(attacker.Object, defender.Object);
+
             Assert.AreEqual(20, attackerCurrentAttack);
         }
 
         [Test]
         public void ToString_ShouldReturnStringWithTypeAndRounds()
         {
-            DoubleAttackWhenAttacking doubleAttackWhenAttacking = new DoubleAttackWhenAttacking(1);
+            var doubleAttackWhenAttacking = new DoubleAttackWhenAttacking(1);
             string expected = $"{doubleAttackWhenAttacking.GetType().Name}({1})";
             string actual = doubleAttackWhenAttacking.ToString();
 

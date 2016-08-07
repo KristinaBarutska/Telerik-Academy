@@ -4,7 +4,7 @@
     using System.Globalization;
 
     using ArmyOfCreatures.Logic.Creatures;
-
+    
     public sealed class CreaturesInBattle : ICreaturesInBattle
     {
         private decimal lastDamage;

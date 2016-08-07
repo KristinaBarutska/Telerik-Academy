@@ -1,6 +1,7 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
 
     using NUnit.Framework;
     using Logic.Specialties;
@@ -10,33 +11,41 @@
     [TestFixture]
     public class AddDefenseWhenSkipTests
     {
-        [TestCase(-100)]
-        [TestCase(100)]
+        [TestCase(0)]
+        [TestCase(21)]
         public void Constructor_InvalidDefenseToAdd_ShouldThrowArgumentOutOfRangeException(int defenseToAdd)
         {
-            Assert.Throws(typeof(ArgumentOutOfRangeException), () => new AddDefenseWhenSkip(defenseToAdd));
+            Assert.Throws<ArgumentOutOfRangeException>(() => new AddDefenseWhenSkip(defenseToAdd));
         }
 
         [Test]
-        public void ApplyOnSkip_NullCreature_ShouldThrowArgumentNullException()
+        public void Constructor_ValidDefenseToAdd_ShouldSetDefenseToAddToThePassedValue()
         {
-            var addDefenseWhenSkip = new AddDefenseWhenSkip(10);
+            var specialty = new AddDefenseWhenSkip(5);
+            var defenseToAdd = (int)typeof(AddDefenseWhenSkip)
+                .GetField("defenseToAdd", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(specialty);
 
-            Assert.Throws(typeof(ArgumentNullException), () => addDefenseWhenSkip.ApplyOnSkip(null));
+            Assert.AreEqual(5, defenseToAdd);
         }
 
         [Test]
-        public void ApplyOnSkip_ValidCreature_ShouldAddDefenseToAddToCreaturesPermanentDefense()
+        public void ApplyOnSkip_NullSkipCreature_ShouldThrowArgumentNullException()
         {
-            var addDefenseWhenSkip = new AddDefenseWhenSkip(10);
-            var creature = new Angel();
-            var creatureInBattle = new CreaturesInBattle(creature, 1);
+            var specialty = new AddDefenseWhenSkip(5);
+            Assert.Throws<ArgumentNullException>(() => specialty.ApplyOnSkip(null));
+        }
 
-            int expected = creatureInBattle.PermanentDefense + 10;
-            addDefenseWhenSkip.ApplyOnSkip(creatureInBattle);
-            int actual = creatureInBattle.PermanentDefense;
+        [Test]
+        public void ApplyOnSkip_ValidSkipCreature_ShouldAddDefenseToAddToSkipCreaturesPermanentDefense()
+        {
+            var specialty = new AddDefenseWhenSkip(5);
+            var angel = new Angel();
+            var skipCreature = new CreaturesInBattle(angel, 1);
+            var permanentDefenseBeforeAdd = skipCreature.PermanentDefense;
 
-            Assert.AreEqual(expected, actual);
+            specialty.ApplyOnSkip(skipCreature);
+            Assert.AreEqual(permanentDefenseBeforeAdd + 5, skipCreature.PermanentDefense);
         }
 
         [Test]

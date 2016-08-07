@@ -2,10 +2,9 @@
 {
     using System;
 
-    using ArmyOfCreatures.Logic;
     using NUnit.Framework;
+    using Logic;
 
-    [TestFixture]
     public class CreaturesFactoryTests
     {
         [TestCase("Angel")]
@@ -13,22 +12,17 @@
         [TestCase("ArchDevil")]
         [TestCase("Behemoth")]
         [TestCase("Devil")]
-        public void CreateCreature_PassValidName_ShouldReturnValidCreature(string name)
+        public void CreateCreature_ValidName_ShouldReturnNewCreature(string name)
         {
             var factory = new CreaturesFactory();
-
-            var creature = factory.CreateCreature(name);
-
-            Assert.AreEqual(name, creature.GetType().Name);
+            Assert.DoesNotThrow(() => factory.CreateCreature(name));
         }
 
         [Test]
-        public void CreateCreature_PassInvalidName_ShouldThrowArgumentException()
+        public void CreateCreature_InvalidName_ShouldThrowArgumentException()
         {
             var factory = new CreaturesFactory();
-            string name = "dsadas";
-
-            Assert.Throws<ArgumentException>(() => factory.CreateCreature(name));
+            Assert.Throws<ArgumentException>(() => factory.CreateCreature("Evlogi"));
         }
     }
 }

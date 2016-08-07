@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B62BBA75-1E29-461A-B697-80CEF0BFD820}</ProjectGuid>
+    <ProjectGuid>{3D9CD5A2-BBC6-4861-AD8E-354B7CDECA00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArmyOfCreatures.Tests</RootNamespace>
-    <AssemblyName>ArmyOfCreatures.Tests</AssemblyName>
+    <RootNamespace>ArmyOfCreatures.Console.Tests</RootNamespace>
+    <AssemblyName>ArmyOfCreatures.Console.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -62,26 +62,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AddAttackWhenSkipTests.cs" />
     <Compile Include="AddCommandTests.cs" />
-    <Compile Include="AddDefenseWhenSkipTests.cs" />
     <Compile Include="AttackCommandTests.cs" />
-    <Compile Include="BattleManagerTests.cs" />
     <Compile Include="CommandManagerTests.cs" />
-    <Compile Include="CreatureIdentifierTests.cs" />
-    <Compile Include="CreaturesFactoryTests.cs" />
-    <Compile Include="CreaturesInBattleTests.cs" />
-    <Compile Include="DoubleAttackWhenAttackingTests.cs" />
-    <Compile Include="DoubleDamageTests.cs" />
-    <Compile Include="DoubleDefenseWhenDefendingTests.cs" />
-    <Compile Include="ExtendedBattleManagerTests.cs" />
-    <Compile Include="ExtendedCreaturesFactoryTests.cs" />
-    <Compile Include="HateTests.cs" />
-    <Compile Include="Mocks\MockedBattleManager.cs" />
-    <Compile Include="Mocks\MockedExtendedBattleManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReduceEnemyDefenseByPercentageTests.cs" />
-    <Compile Include="ResurrectionTests.cs" />
     <Compile Include="SkipCommandTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,9 +76,6 @@
       <Project>{bb52e531-9691-46af-9ed3-0ec7b011fbec}</Project>
       <Name>ArmyOfCreatures</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ArmyOfCreatures.Console.Tests.csproj" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

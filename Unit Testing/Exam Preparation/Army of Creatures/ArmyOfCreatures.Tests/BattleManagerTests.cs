@@ -1,129 +1,289 @@
 ﻿namespace ArmyOfCreatures.Tests
 {
     using System;
+    using System.Reflection;
+    using System.Collections.Generic;
 
-    using Extended.Creatures;
-    using Logic;
-    using Logic.Battles;
-    using Logic.Creatures;
     using Moq;
     using NUnit.Framework;
-
+    using Logic.Battles;
+    using Logic;
+    using Logic.Creatures;
+    using Mocks;
+    
     [TestFixture]
     public class BattleManagerTests
     {
         [Test]
-        public void AddCreature_NullCreatureIdentifier_ShouldThrowArgumentNullException()
+        public void Constructor_ShouldSetAllPrivateFields()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
-            var mockedLogger = new Mock<ILogger>();
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var manager = new BattleManager(factory.Object, logger.Object);
+            
+            var firstArmy = typeof(BattleManager)
+                .GetField("firstArmyCreatures", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(manager);
+            var secondArmy = typeof(BattleManager)
+                .GetField("secondArmyCreatures", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(manager);
+            var creaturesFactory = typeof(BattleManager)
+                .GetField("creaturesFactory", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(manager);
+            var managerLogger = typeof(BattleManager)
+                .GetField("logger", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(manager);
 
-            Assert.Throws(typeof(ArgumentNullException), () => battleManager.AddCreatures(null, 1));
+            Assert.IsTrue(firstArmy != null && secondArmy != null && creaturesFactory != null && managerLogger != null);
         }
 
         [Test]
-        public void AddCreature_ValidIdentifier_ShouldCallCreateCreature()
+        public void AddCreatures_NullIdentifier_ShouldThrowArgumentNulException()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var manager = new BattleManager(factory.Object, logger.Object);
 
-            mockedFactory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
-
-            var mockedLogger = new Mock<ILogger>();
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
-            var identifier = CreatureIdentifier.CreatureIdentifierFromString("AncientBehemoth(1)");
-
-            battleManager.AddCreatures(identifier, 1);
-            mockedFactory.Verify(f => f.CreateCreature(It.IsAny<string>()), Times.Exactly(1));
+            Assert.Throws<ArgumentNullException>(() => manager.AddCreatures(null, 1));
         }
 
         [Test]
-        public void AddCreature_ValidIdentifier_LoggerWritelineShouldBeCalled()
+        public void AddCreatures_ValidIdentifierWithArmyNumber1_ShouldAddCreatureInFirstArmyCreatures()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
 
-            mockedFactory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
 
-            var mockedLogger = new Mock<ILogger>();
+            var manager = new BattleManager(factory.Object, logger.Object);
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
 
-            mockedLogger.Setup(l => l.WriteLine(It.IsAny<string>())).Verifiable();
+            manager.AddCreatures(identifier, 1);
 
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
-            var identifier = CreatureIdentifier.CreatureIdentifierFromString("AncientBehemoth(1)");
+            var firstArmy = typeof(BattleManager)
+                .GetField("firstArmyCreatures", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(manager) as ICollection<ICreaturesInBattle>;
 
-            battleManager.AddCreatures(identifier, 1);
-            mockedLogger.Verify(l => l.WriteLine(It.IsAny<string>()), Times.Exactly(1));
+            Assert.AreEqual(1, firstArmy.Count);
+        }
+
+        [Test]
+        public void AddCreatures_ValidIdentifier_LoggerWriteLineShouldBeCalledExactlyOnce()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
+
+            var manager = new BattleManager(factory.Object, logger.Object);
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
+
+            manager.AddCreatures(identifier, 1);
+            logger.Verify(l => l.WriteLine(It.IsAny<string>()), Times.Once());
         }
 
         [Test]
         public void Attack_NullAttackerIdentifier_ShouldThrowArgumentNullException()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
-            var mockedLogger = new Mock<ILogger>();
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var manager = new BattleManager(factory.Object, logger.Object);
+            var defender = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
 
-            Assert.Throws(typeof(ArgumentNullException), () => battleManager.Attack(null, null));
+            Assert.Throws<ArgumentNullException>(() => manager.Attack(null, defender));
         }
 
         [Test]
         public void Attack_NullDefenderIdentifier_ShouldThrowArgumentNullException()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
 
-            mockedFactory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Goblin());
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
 
-            var mockedLogger = new Mock<ILogger>();
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
-            var attackerIdentifier = CreatureIdentifier.CreatureIdentifierFromString("Goblin(1)");
+            var manager = new BattleManager(factory.Object, logger.Object);
+            var attacker = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
 
-            battleManager.AddCreatures(attackerIdentifier, 1);
-            Assert.Throws(typeof(ArgumentNullException), () => battleManager.Attack(attackerIdentifier, null));
+            manager.AddCreatures(attacker, 1);
+            Assert.Throws<ArgumentNullException>(() => manager.Attack(attacker, null));
         }
 
         [Test]
-        public void Attack_ValidIdentifiers_ShouldCallLoggerWriteLineTwoTimesForAddingCreatureAndFourTimesForCreaturesInfo()
+        public void Attack_ValidIdentifiers_ShouldCallLoggerWriteLineExactly6Times()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
-            var mockedLogger = new Mock<ILogger>();
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
 
-            mockedFactory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Goblin());
-            mockedLogger.Setup(l => l.WriteLine(It.IsAny<string>())).Verifiable();
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
 
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
-            var attackerIdentifier = CreatureIdentifier.CreatureIdentifierFromString("Goblin(1)");
-            var defenderIdentifier = CreatureIdentifier.CreatureIdentifierFromString("Goblin(2)");
+            var manager = new BattleManager(factory.Object, logger.Object);
+            var attacker = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
+            var defender = CreatureIdentifier.CreatureIdentifierFromString("Angel(2)");
 
-            battleManager.AddCreatures(attackerIdentifier, 1);
-            battleManager.AddCreatures(defenderIdentifier, 1);
-            battleManager.Attack(attackerIdentifier, defenderIdentifier);
-            mockedLogger.Verify(l => l.WriteLine(It.IsAny<string>()), Times.Exactly(6));
+            manager.AddCreatures(attacker, 1);
+            manager.AddCreatures(defender, 1);
+            manager.Attack(attacker, defender);
+
+            logger.Verify(l => l.WriteLine(It.IsAny<string>()), Times.Exactly(6));
         }
 
         [Test]
         public void Skip_NullIdentifier_ShouldThrowArgumentNullException()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
-            var mockedLogger = new Mock<ILogger>();
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var manager = new BattleManager(factory.Object, logger.Object);
 
-            Assert.Throws(typeof(ArgumentNullException), () => battleManager.Skip(null));
+            Assert.Throws<ArgumentNullException>(() => manager.Skip(null));
         }
 
         [Test]
-        public void ValidIdentifier_ShouldCallLoggerWriteLineOnceForAddingCreatureAndTwiceToLogCreatureInfo()
+        public void Skip_ValidIdentifier_ShouldCallLoggerWriteLineExactlyThrice()
         {
-            var mockedFactory = new Mock<ICreaturesFactory>();
-            var mockedLogger = new Mock<ILogger>();
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
 
-            mockedFactory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Goblin());
-            mockedLogger.Setup(l => l.WriteLine(It.IsAny<string>())).Verifiable();
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
 
-            var battleManager = new BattleManager(mockedFactory.Object, mockedLogger.Object);
-            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Goblin(1)");
+            var manager = new BattleManager(factory.Object, logger.Object);
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
 
-            battleManager.AddCreatures(identifier, 1);
-            battleManager.Skip(identifier);
-            mockedLogger.Verify(l => l.WriteLine(It.IsAny<string>()), Times.Exactly(3));
+            manager.AddCreatures(identifier, 1);
+            manager.Skip(identifier);
+            logger.Verify(l => l.WriteLine(It.IsAny<string>()), Times.Exactly(3));
+        }
+
+        // Protected methods
+        [Test]
+        public void AddCreaturesByIdentifier_NullCreatureIdentifier_ShouldThrowArgumentNullException()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var creaturesInBattle = new Mock<ICreaturesInBattle>();
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+
+            Assert.Throws<ArgumentNullException>(() => manager.AddCreaturesByIdentifier_Exposed(null, creaturesInBattle.Object));
+        }
+
+        [Test]
+        public void AddCreaturesByIdentifier_NullCreaturesInBattle_ShouldThrowArgumentNullException()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+
+            Assert.Throws<ArgumentNullException>(() => manager.AddCreaturesByIdentifier_Exposed(identifier, null));
+        }
+
+        [Test]
+        public void AddCreaturesByIdentifier_ValidParameters_IdentifierWith1ArmyNumber_ShouldAddCreatureToFirstArmy()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var creaturesInBattle = new Mock<ICreaturesInBattle>();
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+
+            manager.AddCreaturesByIdentifier_Exposed(identifier, creaturesInBattle.Object);
+
+            var firstArmy = typeof(BattleManager)
+                .GetField("firstArmyCreatures", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(manager) as ICollection<ICreaturesInBattle>;
+
+            Assert.AreEqual(1, firstArmy.Count);
+        }
+
+        [Test]
+        public void AddCreaturesByIdentifier_ValidParameters_IdentifierWith2ArmyNumber_ShouldAddCreatureToSecondArmy()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var creaturesInBattle = new Mock<ICreaturesInBattle>();
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(2)");
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+
+            manager.AddCreaturesByIdentifier_Exposed(identifier, creaturesInBattle.Object);
+
+            var secondArmy = typeof(BattleManager)
+                .GetField("secondArmyCreatures", BindingFlags.NonPublic | BindingFlags.Instance)
+                .GetValue(manager) as ICollection<ICreaturesInBattle>;
+
+            Assert.AreEqual(1, secondArmy.Count);
+        }
+
+        [Test]
+        public void AddCreaturesByIdentifier_IdentifierWithInvalidArmyNumber_ShouldThrowArgumentException()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var creaturesInBattle = new Mock<ICreaturesInBattle>();
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(5)");
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+
+            Assert.Throws<ArgumentException>(() => manager.AddCreaturesByIdentifier_Exposed(identifier, creaturesInBattle.Object));
+        }
+
+        [Test]
+        public void GetByIdentifier_NullIdentifier_ShouldThrowArgumentNullException()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+
+            Assert.Throws<ArgumentNullException>(() => manager.GetByIdentifier_Exposed(null));
+        }
+
+        [Test]
+        public void GetByIndetifier_IdentifierWithArmyNumber1_ShouldReturnFoundCreatureFromFirstArmy()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
+
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(1)");
+
+            manager.AddCreatures(identifier, 1);
+
+            var expected = typeof(CreaturesInBattle);
+            var actual = manager.GetByIdentifier_Exposed(identifier).GetType();
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void GetByIndetifier_IdentifierWithArmyNumber2_ShouldReturnFoundCreatureFromSecondArmy()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
+
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+            var identifier = CreatureIdentifier.CreatureIdentifierFromString("Angel(2)");
+
+            manager.AddCreatures(identifier, 1);
+
+            var expected = typeof(CreaturesInBattle);
+            var actual = manager.GetByIdentifier_Exposed(identifier).GetType();
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void GetByIndetifier_IdentifierWithInvalidArmyNumber_ShouldThrowArgumentException()
+        {
+            var logger = new Mock<ILogger>();
+            var factory = new Mock<ICreaturesFactory>();
+
+            factory.Setup(f => f.CreateCreature(It.IsAny<string>())).Returns(new Angel());
+
+            var manager = new MockedBattleManager(factory.Object, logger.Object);
+            var identifierToSearch = CreatureIdentifier.CreatureIdentifierFromString("Angel(7)");
+            
+            Assert.Throws<ArgumentException>(() => manager.GetByIdentifier_Exposed(identifierToSearch));
         }
     }
 }
